@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Tennis vereneging DTV
                 </div>
 
                 <div class="links">
