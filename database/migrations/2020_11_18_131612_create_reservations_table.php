@@ -15,7 +15,10 @@ class CreateReservationsTable extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->integer('LaneID');
+            $table->integer('UserID');
+            $table->time('ReservationTime');
+            $table->date('ReservationDate');
         });
     }
 

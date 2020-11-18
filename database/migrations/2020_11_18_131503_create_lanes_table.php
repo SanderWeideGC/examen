@@ -15,7 +15,15 @@ class CreateLanesTable extends Migration
     {
         Schema::create('lanes', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('LaneName');
+            $table->string('LaneCategory');
+            $table->string('LanePositioning');
+            $table->string('LaneLenght');
+            $table->string('LaneWidth');
+            $table->string('LaneFlooring');
+            $table->date('LaneLastCheck');
+            $table->date('LaneLastService');
+            $table->string('LaneStatus');
         });
     }
 
