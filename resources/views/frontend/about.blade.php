@@ -1,9 +1,5 @@
 @extends('frontend.layout')
 @section('content')
-
-<div class=innerbannerwrap>
-    <div class=innerbanner><h2 class=bannerHeadline>about <span>us</span></h2></div>
-</div>
 <section class="matchSchedule countryclub">
     <div class=container>
         <div class=row><h2 class="heading small">soccer <span>country club</span></h2>
