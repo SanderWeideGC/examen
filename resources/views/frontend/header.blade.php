@@ -5,7 +5,7 @@
     <meta charset=utf-8>
     <meta name=description content="">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>soccer club</title>
+    <title>DTV</title>
     <link rel="shortcut icon" href=favicon.ico>
     <link rel=stylesheet href=vendor.css>
     <link rel=stylesheet href=style.css>
@@ -22,9 +22,10 @@
             <div class=container>
                 <div class=row>
                     <ul>
-                        <li><a href="#">Signup/login</a></li>
-                        <li><a href=shopcart.html><i class="fa fa-shopping-cart"></i> <span>cart(<span
-                                class=cartitems>0</span>)</span></a></li>
+                        <li><a href="#">Inloggen</a></li>
+                        <li><a href="#">Registreren</a></li>
+
+                        
                     </ul>
                 </div>
             </div>
@@ -44,43 +45,19 @@
                                     <ul class="nav navbar-nav menu-bar" id="nav">
                                     <li><a href=/ class="{{ Request::path() === '/' ? 'active' : '' }}">Home <span></span> <span></span>
                                             <span></span> <span></span></a></li>
-                                        <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">about <span></span> <span></span> <span></span>
+                                        <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Over <span></span> <span></span> <span></span>
                                             <span></span></a></li>
-                                        <li><a>gallery <span></span> <span></span> <span></span> <span></span></a>
-                                            <ul class=sub-menu>
-                                                <li><a href=gallerypage01.html>masonry</a></li>
-                                                <li><a href=gallery02.html>gallery column two</a></li>
-                                                <li><a href=gallery03.html>gallery column 03</a></li>
-                                            </ul>
+                                        <li><a>Kantine <span></span> <span></span> <span></span> <span></span></a>
                                         </li>
-                                        <li><a href=blog.html>blog <span></span> <span></span> <span></span>
+                                        <li><a href=contact.html>Contact <span></span> <span></span> <span></span>
                                             <span></span></a></li>
-                                        <li><a href=bookTicket.html>book Tickets <span></span> <span></span>
-                                            <span></span> <span></span></a></li>
-                                        <li><a href=shop.html>shop <span></span> <span></span> <span></span>
-                                            <span></span></a></li>
-                                        <li><a href=contact.html>contact <span></span> <span></span> <span></span>
-                                            <span></span></a></li>
-                                        <li><a>error <span></span> <span></span> <span></span> <span></span></a>
-                                            <ul class=sub-menu>
-                                                <li><a href=400.html>400 page</a></li>
-                                                <li><a href=401.html>401 page</a></li>
-                                                <li><a href=403.html>403 page</a></li>
-                                                <li><a href=404.html>404 page</a></li>
-                                                <li><a href=500.html>500 page</a></li>
-                                                <li><a href=503.html>503 page</a></li>
-                                            </ul>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
                         </nav>
                     </div>
-                    <div class=social><a href=https://www.facebook.com/templatespoint.net class=facebook><i
-                            class="fa fa-facebook"></i></a> <a href=https://twitter.com/itobuztech class=twitter><i
-                            class="fa fa-twitter"></i></a> <a href=https://www.behance.net/ class=behance><i
-                            class="fa fa-behance"></i></a></div>
-                </div>
+                    <div
             </div>
         </div>
     </header>
