@@ -45,19 +45,16 @@
                                     <ul class="nav navbar-nav menu-bar" id="nav">
                                     <li><a href=/ class="{{ Request::path() === '/' ? 'active' : '' }}">Home <span></span> <span></span>
                                             <span></span> <span></span></a></li>
-                                        <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Over <span></span> <span></span> <span></span>
-                                            <span></span></a></li>
-                                        <li><a href=kantine class="{{ Request::path() === 'kantine' ? 'active' : '' }}">Kantine <span></span> <span></span> <span></span>
-                                            <span></span></a></li>
-                                        <li><a href=contact class="{{ Request::path() === 'contact' ? 'active' : '' }}">Contact <span></span> <span></span> <span></span>
-                                            <span></span></a></li>
+                                        <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Over</a></li>
+                                        <li><a href=kantine class="{{ Request::path() === 'kantine' ? 'active' : '' }}">Kantine</a></li>
+                                        <li><a href=contact class="{{ Request::path() === 'contact' ? 'active' : '' }}">Contact</a></li>
 
                                     </ul>
                                 </div>
                             </div>
                         </nav>
                     </div>
-                    <div
+                </div>
             </div>
         </div>
     </header>
