@@ -47,9 +47,9 @@
                                             <span></span> <span></span></a></li>
                                         <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Over <span></span> <span></span> <span></span>
                                             <span></span></a></li>
-                                        <li><a>Kantine <span></span> <span></span> <span></span> <span></span></a>
-                                        </li>
-                                        <li><a href=contact.html>Contact <span></span> <span></span> <span></span>
+                                        <li><a href=kantine class="{{ Request::path() === 'kantine' ? 'active' : '' }}">Kantine <span></span> <span></span> <span></span>
+                                            <span></span></a></li>
+                                        <li><a href=contact class="{{ Request::path() === 'contact' ? 'active' : '' }}">Contact <span></span> <span></span> <span></span>
                                             <span></span></a></li>
 
                                     </ul>
