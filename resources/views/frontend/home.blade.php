@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 @section('header')
-    
+
 <div class=banner id=layerSlider style="width: 100%;">
     <div class=ls-slide data-ls="transition3d: 33,15; slidedelay: 8000 ; durationin:0;"><img
             src=images/banner/background01.jpg class=ls-bg alt="Slide background">
@@ -17,21 +17,11 @@
              data-ls="offsetxin: left; offsetxout:left; scalein:90; easingin: easeoutquart; durationin: 3000; delayin: 250;">
 
         <h2 class="ls-l bannertext layercontent03" data-ls="offsetxin:left; rotatexin:90 ; durationin: 3500;">
-            action</h2>
-
-        <h2 class="ls-l bannertext01 italic01 layercontent04"
-            data-ls="offsetxin:left; scalexin:9; durationin: 4000;">starts</h2><h4
-                class="ls-l bannertext02 layercontent05" data-ls="offsetxin:left; rotatexin:90 ; durationin: 4500;">
-            from</h4>
-
-        <h2 class="ls-l bannertext01 layercontent06" style="left: 87%; top:760px;"
-            data-ls="offsetxin:left; flipxin:90 ; durationin: 5000;">21<sup>st</sup></h2><h6
-                class="ls-l bannertext03 layercontent07" data-ls="offsetxin:left; flipxin:90 ; durationin: 6000;">
-            july , 2015</h6></div>
+            dtv</h2>
 </div>
 <div class=banner-text>
     <div class=container>
-        <div class=row>action start from 21<sup>st</sup> july , 2015.</div>
+        <div class=row>DTV<sup>ncdcdsc</sup> sdcdscds , dssdcds.</div>
     </div>
 </div>
 <section class="booking bg-smallwhite">
@@ -46,7 +36,7 @@
 @section('content')
     <section class=about>
         <div class=container>
-            <div class=row><h2 class=heading>About <span>scc</span></h2>
+            <div class=row><h2 class=heading>Over <span>DTV</span></h2>
 
                 <div class=about-wrap>
                     <div class="tab-content nav-content"><p role=tabpanel class="tab-pane fade" id=matches>Lorem ipsum
