@@ -25,7 +25,7 @@
                         <li><a href="#">Inloggen</a></li>
                         <li><a href="#">Registreren</a></li>
 
-                        
+
                     </ul>
                 </div>
             </div>
