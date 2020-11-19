@@ -41,10 +41,10 @@
                                         <span class=icon-bar></span></button>
                                 </div>
                                 <div class=nav-menu>
-                                    <ul class="nav navbar-nav menu-bar">
-                                        <li><a href=/ class=active>Home <span></span> <span></span>
+                                    <ul class="nav navbar-nav menu-bar" id="nav">
+                                    <li><a href=/ class="{{ Request::path() === '/' ? 'active' : '' }}">Home <span></span> <span></span>
                                             <span></span> <span></span></a></li>
-                                        <li><a href=about>about <span></span> <span></span> <span></span>
+                                        <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">about <span></span> <span></span> <span></span>
                                             <span></span></a></li>
                                         <li><a>gallery <span></span> <span></span> <span></span> <span></span></a>
                                             <ul class=sub-menu>
