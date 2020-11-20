@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/admin', function () {
+    return view('backend.home');
+});
+
+Route::prefix('admin')->group(function() {
+    Route::get('/leden', 'UsersController@index')->name('backend.users');
+    Route::get('/banen', 'LanesController@index')->name('backend.lanes');
+    Route::get('/toernooien', 'TournamentsController@index')->name('backend.tournaments');
+    Route::get('/kantine', 'ProductsController@index')->name('backend.products');
+});
