@@ -19,17 +19,12 @@
         <h2 class="ls-l bannertext layercontent03" data-ls="offsetxin:left; rotatexin:90 ; durationin: 3500;">
             dtv</h2>
 </div>
-<div class=banner-text>
-    <div class=container>
-        <div class=row>DTV<sup>ncdcdsc</sup> sdcdscds , dssdcds.</div>
-    </div>
+
 </div>
 <section class="booking bg-smallwhite">
     <div class=container>
-        <div class=booking-fig><h2>SCC football club</h2></div>
-        <div class=booking-content><a href=# class="btn btn-white">read more</a> <a href=bookTicket.html
-                                                                                    class="btn btn-red">book my
-            ticket</a></div>
+        <div class=booking-fig><h2>Doetinchemse Tennis Vereniging</h2></div>
+
     </div>
 </section>
 @endsection
@@ -62,10 +57,10 @@
                             consequuntur atque dolor dolores asperiores illum, quam hic ab?</p></div>
                     <div class=nav-header id=aboutTab>
                         <ul class="nav nav-tabs clearfix" role=tablist>
-                            <li><a href=#matches aria-controls=matches role=tab data-toggle=tab>Matches</a></li>
-                            <li class=active><a href=#static aria-controls=static role=tab data-toggle=tab>statics</a>
+                            <li><a href=#matches aria-controls=matches role=tab data-toggle=tab>Tennis</a></li>
+                            <li class=active><a href=#static aria-controls=static role=tab data-toggle=tab>Squash</a>
                             </li>
-                            <li><a href=#traning aria-controls=traning role=tab data-toggle=tab>traning</a></li>
+                            <li><a href=#traning aria-controls=traning role=tab data-toggle=tab>Toernooien</a></li>
                         </ul>
                     </div>
                 </div>
@@ -74,20 +69,20 @@
     </section>
     <section class=latestResult>
         <div class=container>
-            <div class=row><h2 class=heading>latest <span>result</span></h2>
+            <div class=row><h2 class=heading>Vorige <span>resultaten</span></h2>
 
-                <div class=latestResult-wrap><h4>uefa champions league</h4>
+                <div class=latestResult-wrap><h4>Toernooi 20 november 2020</h4>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, nemo tenetur magnam eveniet sed
                         aut, iste facere quisquam, cumque, vitae quis deleniti animi. A ipsum iusto, temporibus, beatae
                         porro nemo.</p></div>
                 <div class="result clearfix">
                     <div class=result-details>
-                        <div class=content><h4>fc Dragons</h4>
+                        <div class=content><h4>Basir Ilhan</h4>
 
-                            <p>lose</p>
+                            <p>WINST</p>
 
-                            <p>Shannon Skelly(23)</p></div>
+                            </div>
                         <div class=figure>
                             <div class=team-logo>
                                 <div style=background:url(images/team-logo/logo01.png) class=teamLogoImg></div>
@@ -95,37 +90,29 @@
                         </div>
                     </div>
                     <div class=result-count>
-                        <div class=count-number><span class=lose-team>1</span> <span>-</span> <span
-                                class=win-team>3</span></div>
-                        <div class=dateTime>
-                            <div class=dateTime-container><span class=date>may 16,2015</span> <span
-                                    class=time>15:30pm</span></div>
-                            <div class=country-wrap><span class=field>wbeysley stadium</span> <span class=country>(london)</span>
-                            </div>
-                        </div>
+                        <div class=count-number><span class=lost-team>2</span> <span>-</span> <span
+                                class=lost-team>1</span></div>
+
                     </div>
                     <div class=result-details>
-                        <div class="content contentresult"><h4>fc Zulu Ninjas</h4>
+                        <div class="content contentresult"><h4>Ben Wennink</h4>
 
-                            <p>win</p>
+                            <p>Verloren</p>
 
-                            <p>Leland Lagos(29)</p>
-
-                            <p>Lelnd Lagos(39)</p></div>
+                            </div>
                         <div class="figure figresult">
                             <div class=team-logo>
                                 <div style=background:url(images/team-logo/logo02.png) class=teamLogoImg></div>
                             </div>
                         </div>
                     </div>
-                    <div class=center><a href=# class="btn btn-red score-btn">Score board</a></div>
                 </div>
             </div>
         </div>
     </section>
     <section class=matchSchedule>
         <div class=container>
-            <div class=row><h2 class=heading>match <span>schedule</span></h2>
+            <div class=row><h2 class=heading>Wedstrijd <span>schema</span></h2>
 
                 <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia
                     qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel
@@ -137,7 +124,7 @@
                 <div class="matchSchedule_details row">
                     <div class="match_next right-triangle">
                         <div class="wrap_match_next right-triangle">
-                            <div class=right-padding><h4 class=headline03>next match</h4>
+                            <div class=right-padding><h4 class=headline03>Volgende toernooi</h4>
 
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                         </div>
@@ -241,7 +228,7 @@
                     </div>
                     <div class=match_next>
                         <div class="wrap_match_next left_triangle">
-                            <div class=left_padding><h4 class=headline03>upcoming feature</h4>
+                            <div class=left_padding><h4 class=headline03>aankomende wedstrijden</h4>
 
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                         </div>
@@ -250,7 +237,7 @@
                 <div class="matchSchedule_details row">
                     <div class=match_next>
                         <div class="wrap_match_next right-triangle">
-                            <div class=right-padding><h4 class=headline03>pointed table</h4>
+                            <div class=right-padding><h4 class=headline03>ranking lijst</h4>
 
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
                         </div>
@@ -328,696 +315,10 @@
             </div>
         </div>
     </section>
-    <section class="booking bookticket">
-        <div class=container>
-            <div class=booking-fig><h2>SCC football club</h2></div>
-            <div class=booking-content><a href=# class="btn btn-white">book now</a></div>
-        </div>
-    </section>
-    <section class=latestvideo>
-        <div class=container>
-            <div class=row><h2 class=heading>latest <span>video</span></h2>
 
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia
-                    qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel
-                    ipsam, nesciunt dolores consequatur, est tempora ut! Est?>Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
-                    voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut!
-                    Est.</p>
 
-                <div class="video-wrap clearfix">
-                    <div class="video-content clearfix"><a class=btn-up></a>
-                        <ul class="videoLive clearfix" id=videoSlide role=tablist>
-                            <li><a class=changeVideo data-yt-video=W7qWa52k-nE>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
-                            </a></li>
-                            <li><a class=changeVideo data-yt-video=YtXNB-0cFBo>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
-                            </a></li>
-                            <li><a class=changeVideo data-yt-video=W7qWa52k-nE>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
-                            </a></li>
-                            <li><a class=changeVideo data-yt-video=yw3Cw5eG1wM>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
-                            </a></li>
-                            <li><a class=changeVideo data-yt-video=W7qWa52k-nE>
-                                <div><span>september 10, 2015</span> consectetur adipisicing elit : <span>Live audio and video</span>
-                                </div>
-                            </a></li>
-                        </ul>
-                        <a class=btn-down></a></div>
-                    <div class=video-show>
-                        <div class=video-container id=video01 data-current-video=W7qWa52k-nE>
-                            <iframe src=http://www.youtube.com/embed/W7qWa52k-nE class=liveVideo
-                                    allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="latest_news bg-white">
-        <div class=container>
-            <div class=row><h2 class=heading>latest <span>news</span></h2>
 
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia
-                    qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel
-                    ipsam, nesciunt dolores consequatur, est tempora ut! Est?>Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Nihil debitis mollitia qui libero voluptate ratione, molestias! Necessitatibus
-                    voluptatem temporibus doloremque non, vel ipsam, nesciunt dolores consequatur, est tempora ut!
-                    Est.</p>
 
-                <div class="LatestNews_wrap clearfix">
-                    <ul class="nav accordion-news" role=tablist>
-                        <li><a href=#world_news aria-controls=world_news role=tab data-toggle=tab id=world_news_button>world
-                            news</a></li>
-                        <li class=active><a href=#club_news aria-controls=club_news role=tab data-toggle=tab
-                                            id=club_news_button>club news</a></li>
-                    </ul>
-                    <div class="tab-content news_display_container clearfix">
-                        <ul id=world_news class=tab-pane>
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/w_news_01.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
 
-                                            <p class=red_p>Stories of the legends</p>
 
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/w_news_01.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
-
-                                            <p class=red_p>Stories of the legends</p>
-
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/w_news-02.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
-
-                                            <p class=red_p>Stories of the legends</p>
-
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/w_news-03.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
-
-                                            <p class=red_p>Stories of the legends</p>
-
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/w-news-04.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
-
-                                            <p class=red_p>Stories of the legends</p>
-
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <a class="prv club_prev"></a> <a class="nxt club_next"></a>
-                        <ul id=club_news class="tab-pane active clearfix">
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/c_news_01.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
-
-                                            <p class=red_p>Stories of the legends</p>
-
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/c_news_02.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
-
-                                            <p class=red_p>Stories of the legends</p>
-
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/c_news_03.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
-
-                                            <p class=red_p>Stories of the legends</p>
-
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/c_news_04.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
-
-                                            <p class=red_p>Stories of the legends</p>
-
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class=figure>
-                                    <div class=column-news>
-                                        <div class=figure-01><img src=images/news/c_news_05.jpg alt=image></div>
-                                        <div class=content-01><h6><a href=#>consectetur adipisicing elit</a></h6>
-
-                                            <p class=red_p>Stories of the legends</p>
-
-                                            <p class=describtion>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</p></div>
-                                        <div class="news_date clearfix"><span>october 14,2015</span> <span class=like><a
-                                                href=#>45</a></span></div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class=club_history>
-        <div class=container>
-            <div class=row><h2 class=heading>club <span>history</span></h2>
-
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                    consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
-                    Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p>
-
-                <div class="nav clubHistory-wrap clearfix">
-                    <ul class=historyMeter>
-                        <li><a href=#><span>1987</span></a></li>
-                        <li class=win><a href=#win01><span>1988</span></a></li>
-                        <li><a href=#><span>1989</span></a></li>
-                        <li><a href=#><span>1990</span></a></li>
-                        <li class="win active"><a href=#win02><span>1991</span></a></li>
-                        <li><a href=#><span>1991</span></a></li>
-                        <li><a href=#><span>1995</span></a></li>
-                        <li><a href=#><span>1997</span></a></li>
-                        <li class=win><a href=#win03><span>2000</span></a></li>
-                        <li><span>2005</span></li>
-                        <li><span>2007</span></li>
-                        <li><span>2009</span></li>
-                        <li class=win><a href=#win04><span>2012</span></a></li>
-                        <li><a href=#><span>2013</span></a></li>
-                        <li><a href=#><span>2014</span></a></li>
-                        <li class=win><a href=#win05><span>2015</span></a></li>
-                    </ul>
-                    <div class="tab-content historyVideoWrap clearfix">
-                        <div role=tabpanel class="tab-pane clearfix" id=win01>
-                            <div class=historyVideo>
-                                <div class=historyvideoContainer>
-                                    <iframe src=https://www.youtube.com/embed/rPEd-h8DdRI allowfullscreen=""></iframe>
-                                </div>
-                            </div>
-                            <div class=historyContent><h4><span>fifa 1988,</span> uefa champions league</h4>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam non voluptatibus
-                                    error a esse maiores, ducimus sit unde alias aspernatur perspiciatis itaque
-                                    corporis? Accusamus pariatur dolorum repellendus consectetur tempore harum? Lorem
-                                    ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a modi atque
-                                    reprehenderit eos, error impedit voluptatum quo quaerat placeat accusantium
-                                    molestiae quod dolore, quae quos, blanditiis recusandae id iste? Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit. Praesentium a modi atque reprehenderit.</p>
-                                <a href=clubHistoryDetails.html class="btn-small btn-red">Read more</a></div>
-                        </div>
-                        <div role=tabpanel class="tab-pane active clearfix" id=win02>
-                            <div class=historyVideo>
-                                <div class=historyvideoContainer>
-                                    <iframe src=https://www.youtube.com/embed/rPEd-h8DdRI allowfullscreen=""></iframe>
-                                </div>
-                            </div>
-                            <div class=historyContent><h4><span>fifa 1991 ,</span> uefa champions league</h4>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam non voluptatibus
-                                    error a esse maiores, ducimus sit unde alias aspernatur perspiciatis itaque
-                                    corporis? Accusamus pariatur dolorum repellendus consectetur tempore harum? Lorem
-                                    ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a modi atque
-                                    reprehenderit eos, error impedit voluptatum quo quaerat placeat accusantium
-                                    molestiae quod dolore, quae quos, blanditiis recusandae id iste? Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit. Praesentium a modi atque reprehenderit eos,
-                                    error impedit voluptatum quo quaerat placeat .</p><a href=clubHistoryDetails.html
-                                                                                         class="btn-small btn-red">Read
-                                    more</a></div>
-                        </div>
-                        <div role=tabpanel class="tab-pane clearfix" id=win03>
-                            <div class=historyVideo>
-                                <div class=historyvideoContainer>
-                                    <iframe src=https://www.youtube.com/embed/F6U5-B3NUKA allowfullscreen=""></iframe>
-                                </div>
-                            </div>
-                            <div class=historyContent><h4><span>fifa 2000 ,</span> uefa champions league</h4>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam non voluptatibus
-                                    error a esse maiores, ducimus sit unde alias aspernatur perspiciatis itaque
-                                    corporis? Accusamus pariatur dolorum repellendus consectetur tempore harum? Lorem
-                                    ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a modi atque
-                                    reprehenderit eos, error impedit voluptatum quo quaerat placeat accusantium
-                                    molestiae quod dolore, quae quos, blanditiis recusandae id iste? Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit. Praesentium a modi atque reprehenderit .</p>
-                                <a href=clubHistoryDetails.html class="btn-small btn-red">Read more</a></div>
-                        </div>
-                        <div role=tabpanel class="tab-pane clearfix" id=win04>
-                            <div class=historyVideo>
-                                <div class=historyvideoContainer>
-                                    <iframe src=https://www.youtube.com/embed/rPEd-h8DdRI allowfullscreen=""></iframe>
-                                </div>
-                            </div>
-                            <div class=historyContent><h4><span>fifa 2012,</span> uefa champions league</h4>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam non voluptatibus
-                                    error a esse maiores, ducimus sit unde alias aspernatur perspiciatis itaque
-                                    corporis? Accusamus pariatur dolorum repellendus consectetur tempore harum? Lorem
-                                    ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a modi atque
-                                    reprehenderit eos, error impedit voluptatum quo quaerat placeat accusantium
-                                    molestiae quod dolore, quae quos, blanditiis recusandae id iste? Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit. Praesentium a modi atque reprehenderit,</p>
-                                <a href=clubHistoryDetails.html class="btn-small btn-red">Read more</a></div>
-                        </div>
-                        <div role=tabpanel class="tab-pane clearfix" id=win05>
-                            <div class=historyVideo>
-                                <div class=historyvideoContainer>
-                                    <iframe src=https://www.youtube.com/embed/rPEd-h8DdRI allowfullscreen=""></iframe>
-                                </div>
-                            </div>
-                            <div class=historyContent><h4><span>fifa 2015 ,</span> uefa champions league</h4>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam non voluptatibus
-                                    error a esse maiores, ducimus sit unde alias aspernatur perspiciatis itaque
-                                    corporis? Accusamus pariatur dolorum repellendus consectetur tempore harum? Lorem
-                                    ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a modi atque
-                                    reprehenderit eos, error impedit voluptatum quo quaerat placeat accusantium
-                                    molestiae quod dolore, quae quos, blanditiis recusandae id iste? Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit. Praesentium a modi atque reprehenderit eos,
-                                    error impedit voluptatum quo quaerat placeat accusantium molestiae quod dolore, quae
-                                    quos, blanditiis recusandae id iste.</p><a href=clubHistoryDetails.html
-                                                                               class="btn-small btn-red">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="players homeplayer">
-        <div class=container>
-            <div class=row><h2 class=heading>our <span>heroes</span></h2>
-
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                    consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
-                    Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p>
-
-                <div class="wrapplayer clearfix"><a class="prv prev-player"></a> <a class="nxt next-player"></a>
-                    <ul class="slideHeroes clearfix">
-                        <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/player/player01.jpg) class=bgimg></div>
-                                </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>Daren Difiore</span> <span><img src=images/icons/tShirt.png
-                                                                              alt=image></span></li>
-                                    <li class=playinfodetails>age 28 (born 22 april ,1987)</li>
-                                    <li class=playerInfo><span>goalkeeper</span> <span><i
-                                            class="fa fa-heart"></i>20</span></li>
-                                </ul>
-                            </div>
-                        </a></li>
-                        <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/player/player02.jpg) class=bgimg></div>
-                                </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>Terry Tijerina</span> <span><img src=images/icons/tShirt.png
-                                                                               alt=image></span></li>
-                                    <li class=playinfodetails>age 28 (born 22 april ,1987)</li>
-                                    <li class=playerInfo><span>DEFENDER</span> <span><i
-                                            class="fa fa-heart"></i>34</span></li>
-                                </ul>
-                            </div>
-                        </a></li>
-                        <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/player/player03.jpg) class=bgimg></div>
-                                </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>Alex Alameda</span> <span><img src=images/icons/tShirt.png
-                                                                             alt=image></span></li>
-                                    <li class=playinfodetails>age 28 (born 22 april ,1987)</li>
-                                    <li class=playerInfo><span>STRIKER</span> <span><i class="fa fa-heart"></i>45</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </a></li>
-                        <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/player/player04.jpg) class=bgimg></div>
-                                </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>Lane Lavalley</span> <span><img src=images/icons/tShirt.png
-                                                                              alt=image></span></li>
-                                    <li class=playinfodetails>age 28 (born 22 april ,1987)</li>
-                                    <li class=playerInfo><span>STRIKER</span> <span><i class="fa fa-heart"></i>45</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </a></li>
-                        <li><a href="#">
-                            <div class=playerFig>
-                                <div class=playerpic>
-                                    <div style=background:url(images/player/player05.jpg) class=bgimg></div>
-                                </div>
-                                <ul class="playerDetails clearfix">
-                                    <li><span>Dominick Dumbleton</span> <span><img src=images/icons/tShirt.png
-                                                                                   alt=image></span></li>
-                                    <li class=playinfodetails>age 28 (born 22 april ,1987)</li>
-                                    <li class=playerInfo><span>STRIKER</span> <span><i class="fa fa-heart"></i>78</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class=gallery>
-        <div class=container>
-            <div class=row><h2 class=heading>our <span>gallery</span></h2>
-
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                    consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
-                    Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p></div>
-        </div>
-        <div class=galleryWrapper>
-            <div class=grid>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/gallery.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/gallery02.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/gallery03.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/gallery04.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/gallery021.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/gallery031.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/five.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/gallery031.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/masonry/medium_01.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/gallery041.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=grid_item>
-                    <div class=gallery_dtl><img src=images/gallery/masonry/medium_03.jpg alt=image>
-
-                        <div class=gallery_info>
-                            <div class=galleryinfo_wrap><p class=uppercase>consectetur</p>
-
-                                <p class=red_p>Magna aliqua</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=gutter></div>
-            </div>
-        </div>
-        <a class="btn btn-red">read more</a></section>
-    <section class=social-media>
-        <div class=container>
-            <div class=row>
-                <ul class=socialinfo>
-                    <li><a href="#">
-                        <div class=sociallink><i class="fa fa-twitter"></i></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
-                            assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
-                            assumenda consectetur reiciendis hic obcaecati.</p></a></li>
-                    <li><a href="#">
-                        <div class=sociallink><i class="fa fa-facebook"></i></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
-                            assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
-                            assumenda consectetur reiciendis hic obcaecati.</p></a></li>
-                    <li><a href="#">
-                        <div class=sociallink><i class="fa fa-behance"></i></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aperiam ut necessitatibus,
-                            assumenda a maxime eos nulla maiores perspiciatis deleniti! A ratione ipsam magnam accusamus
-                            assumenda consectetur reiciendis hic obcaecati.</p></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class=awards>
-        <div class=container>
-            <div class=row><h2 class=heading>awa<span>rds</span></h2>
-
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                    consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
-                    Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p>
-
-                <div class="wrapper-container clearfix"><a class="prv awards_prev"></a> <a class="nxt awards_next"></a>
-                    <ul class="awards-wrap clearfix">
-                        <li><a href=achivement_details.html><img src=images/awards/awards01.png alt=image>
-                            <ul class=awards-info>
-                                <li>uefa 2014</li>
-                                <li>champion</li>
-                            </ul>
-                        </a></li>
-                        <li><a href=achivement_details.html><img src=images/awards/awards02.png alt=image>
-                            <ul class=awards-info>
-                                <li>uefa 2014</li>
-                                <li>champion</li>
-                            </ul>
-                        </a></li>
-                        <li><a href=achivement_details.html><img src=images/awards/awards03.png alt=image>
-                            <ul class=awards-info>
-                                <li>uefa 2014</li>
-                                <li>champion</li>
-                            </ul>
-                        </a></li>
-                        <li><a href=#><img src=images/awards/awards04.png alt=image>
-                            <ul class=awards-info>
-                                <li>uefa 2014</li>
-                                <li>champion</li>
-                            </ul>
-                        </a></li>
-                        <li><a href=achivement_details.html><img src=images/awards/awards02.png alt=image>
-                            <ul class=awards-info>
-                                <li>uefa 2014</li>
-                                <li>champion</li>
-                            </ul>
-                        </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="product bg-white">
-        <div class=container>
-            <div class=row><h2 class=heading>TOP PRODUCTS & <span>merchandise</span></h2>
-
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                    consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
-                    Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p>
-                <ul class=product_details>
-                    <li><a href=#>
-                        <div>
-                            <div class=product-img
-                                 style="background:url(images/product/product01.jpg) center no-repeat"></div>
-                        </div>
-                        <ul class="oswald16 product_info">
-                            <li class=detailsContainer><span>soccer jersey</span> <span><i
-                                    class="fa fa-user"></i>360</span></li>
-                            <li class=cartContainer><span>Add to cart</span> <span><i
-                                    class="fa fa-shopping-cart"></i></span> <span class=price>$199</span></li>
-                        </ul>
-                    </a></li>
-                    <li><a href=#>
-                        <div>
-                            <div class=product-img
-                                 style="background:url(images/product/product02.jpg) center no-repeat"></div>
-                        </div>
-                        <ul class="oswald16 product_info">
-                            <li class=detailsContainer><span>soccer jersey</span> <span><i
-                                    class="fa fa-user"></i>360</span></li>
-                            <li class=cartContainer><span>Add to cart</span> <span><i
-                                    class="fa fa-shopping-cart"></i></span> <span class=price>$199</span></li>
-                        </ul>
-                    </a></li>
-                    <li><a href=#>
-                        <div>
-                            <div class=product-img
-                                 style="background:url(images/product/product03.jpg) center no-repeat"></div>
-                        </div>
-                        <ul class="oswald16 product_info">
-                            <li class=detailsContainer><span>soccer jersey</span> <span><i
-                                    class="fa fa-user"></i>360</span></li>
-                            <li class=cartContainer><span>Add to cart</span> <span><i
-                                    class="fa fa-shopping-cart"></i></span> <span class=price>$199</span></li>
-                        </ul>
-                    </a></li>
-                    <li><a href=#>
-                        <div>
-                            <div class=product-img
-                                 style="background:url(images/product/product04.jpg) center no-repeat"></div>
-                        </div>
-                        <ul class="oswald16 product_info">
-                            <li class=detailsContainer><span>soccer jersey</span> <span><i
-                                    class="fa fa-user"></i>360</span></li>
-                            <li class=cartContainer><span>Add to cart</span> <span><i
-                                    class="fa fa-shopping-cart"></i></span> <span class=price>$199</span></li>
-                        </ul>
-                    </a></li>
-                </ul>
-                <div class=center><a href=# class="btn btn-red">view more</a></div>
-            </div>
-        </div>
-    </section>
 @endsection

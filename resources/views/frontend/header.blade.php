@@ -12,10 +12,7 @@
     <link rel=stylesheet type=text/css href=css/layerslider.css>
     <script src=js/vendor/modernizr.js></script>
 </head>
-<body><!--[if lt IE 10]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
+<body>
 <div class=wrapper>
     <header class=header-main>
         <div class=header-upper>
@@ -37,10 +34,7 @@
                     <div class=menubar>
                         <nav class=navbar>
                             <div class=nav-wrapper>
-                                <div class=navbar-header>
-                                    <button type=button class=navbar-toggle><span class=sr-only>Toggle navigation</span>
-                                        <span class=icon-bar></span></button>
-                                </div>
+
                                 <div class=nav-menu>
                                     <ul class="nav navbar-nav menu-bar" id="nav">
                                     <li><a href=/ class="{{ Request::path() === '/' ? 'active' : '' }}">Home <span></span> <span></span>

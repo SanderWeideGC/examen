@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('frontend.about');
 });
+
+Route::get('/kantine', function () {
+    return view('frontend.kantine');
+});

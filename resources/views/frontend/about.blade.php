@@ -1,8 +1,11 @@
 @extends('frontend.layout')
+@section('header-title')
+    Over ons
+@endsection
 @section('content')
 <section class="matchSchedule countryclub">
     <div class=container>
-        <div class=row><h2 class="heading small">soccer <span>country club</span></h2>
+        <div class=row><h2 class="heading small">Doetinchemse <span>Tennis Vereniging</span></h2>
 
             <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil debitis mollitia
                 qui libero voluptate ratione, molestias! Necessitatibus voluptatem temporibus doloremque non, vel
@@ -14,7 +17,7 @@
 </section>
 <section class=players>
     <div class=container>
-        <div class=row><h2 class=heading>board <span>members</span></h2>
+        <div class=row><h2 class=heading>Ons <span>team</span></h2>
 
             <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
                 consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
@@ -109,7 +112,7 @@
 </section>
 <section class=club_history>
     <div class=container>
-        <div class=row><h2 class=heading>club <span>history</span></h2>
+        <div class=row><h2 class=heading>Club <span>geschiedenis</span></h2>
 
             <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
                 consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
@@ -257,7 +260,7 @@
 </section>
 <section class="club_history achivementwrapper bg-white">
     <div class=container>
-        <div class=row><h2 class=heading>our <span>achievements</span></h2>
+        <div class=row><h2 class=heading>Onze <span>prestaties</span></h2>
 
             <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
                 consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
@@ -462,92 +465,10 @@
         </div>
     </div>
 </section>
-<section class=playerDetails02>
-    <div class=container>
-        <div class=row><h2 class=heading>our <span>player</span></h2>
 
-            <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
-                Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p></div>
-        <div class="wrapper-container clearfix"><a class="prv prev"></a> <a class="nxt next"></a>
-            <ul class=player02>
-                <li>
-                    <div class=player02fig>
-                        <div style=background:url(images/player/player01.jpg) class="imgplayer bgimg"></div>
-                        <div class="playersocial bg-black clearfix"><a href=# class=social_link><i
-                                class="fa fa-facebook"></i></a> <a href=# class=social_link><i
-                                class="fa fa-linkedin"></i></a> <a href=# class=social_link><i
-                                class="fa fa-twitter"></i></a> <a href=# class=social_link><i
-                                class="fa fa-behance"></i></a></div>
-                    </div>
-                    <div class=player02info>
-                        <div class=clearfix>
-                            <div class=player02info01><h6><span>name</span>Monroe Meek</h6><h6><span>position</span>striker
-                            </h6><h6><span>age</span> (born 22 april,1987)</h6></div>
-                            <div class=player02info02><img src=images/player/playerT_shirt01.png alt=image></div>
-                        </div>
-                        <h6 class=oswald16>imformation</h6>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dicta iure atque dolorem
-                            voluptate quasi maxime, repellat aliquid eos. Beatae molestias itaque aspernatur quaerat
-                            culpa laudantium ducimus est eveniet. Repudiandae!lorem.Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Nemo dicta iure atque dolorem voluptate quasi maxime,
-                            repellat aliquid eos. Beatae molestias itaque aspernatur quaerat culpa laudantium
-                            ducimus est eveniet. Repudiandae!lorem.</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dicta iure atque dolorem
-                            voluptate quasi maxime, repellat aliquid eos. He made his debut for France in October
-                            2011 and featured in four of Les Bleus' five games at the 2014 World Cup.</p><h6
-                            class=oswald16>previous club</h6>
-                        <ul class=clearfix>
-                            <li>France international Mathieu Debuchy</li>
-                            <li>18 in the Champions League.</li>
-                            <li>Les Bleus' five games at the 2014</li>
-                        </ul>
-                        <a href=player_details.html>more</a></div>
-                </li>
-                <li>
-                    <div class=player02fig>
-                        <div style=background:url(images/player/player02.jpg) class="imgplayer bgimg"></div>
-                        <div class="playersocial bg-black clearfix"><a href=# class=social_link><i
-                                class="fa fa-facebook"></i></a> <a href=# class=social_link><i
-                                class="fa fa-linkedin"></i></a> <a href=# class=social_link><i
-                                class="fa fa-twitter"></i></a> <a href=# class=social_link><i
-                                class="fa fa-behance"></i></a></div>
-                    </div>
-                    <div class=player02info>
-                        <div class=clearfix>
-                            <div class=player02info01><h6><span>name</span>Kenton Kidd</h6><h6><span>position</span>striker
-                            </h6><h6><span>age</span> (born 22 april,1987)</h6></div>
-                            <div class=player02info02><img src=images/player/playerT_shirt01.png alt=image></div>
-                        </div>
-                        <h6 class=oswald16>imformation</h6>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptates eius
-                            explicabo itaque deleniti saepe adipisci alias fugiat nulla nihil, blanditiis, corrupti
-                            facilis. Fugit, magnam! Sequi harum eos rerum corrupti.Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Ducimus quo voluptatem vel tenetur, doloremque perferendis
-                            magni magnam expedita! Voluptatibus in similique eaque rerum, natus, vitae quam
-                            repudiandae provident sed illum.</p>
-
-                        <p>He helped the French side to a league and cup double in 2010/11 and was named in the
-                            Ligue 1 Team of the Season the following year. He made his debut for France in October
-                            2011 and featured in four of Les Bleus' five games at the 2014 World Cup.</p><h6
-                            class=oswald16>previous club</h6>
-                        <ul class=clearfix>
-                            <li>France international Mathieu Debuchy</li>
-                            <li>18 in the Champions League.</li>
-                            <li>Les Bleus' five games at the 2014</li>
-                        </ul>
-                        <a href=player_details.html>more</a></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
 <section class="sponsors bg-smallwhite">
     <div class=container>
-        <div class=row><h2 class=heading>spon<span>sors</span></h2>
+        <div class=row><h2 class=heading>ONZE<span> SPONSOREN</span></h2>
             <ul class="client clearfix">
                 <li><a href="#"><img src=images/client/client01.png alt=image></a></li>
                 <li><a href="#"><img src=images/client/client02.png alt=image></a></li>
