@@ -6,30 +6,6 @@
             <h2 class="mb-4">Banen</h2>
             <hr>
             <a class="btn btn-dark btn-lg" href="#" role="button"><i class="fas fa-plus-circle"></i> Toevoegen</a>
-            <div class="flex-wrap table-buttons">
-                <div class="dropdown show">
-                    <a class="btn btn-dark btn-lg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-eye"></i> Toon
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-                <div class="dropdown show">
-                    <a class="btn btn-dark btn-lg dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-list"></i> Sorteer op
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="card mb-4">

@@ -27,3 +27,9 @@ Route::prefix('admin')->group(function() {
     Route::get('/toernooien', 'TournamentsController@index')->name('backend.tournaments');
     Route::get('/kantine', 'ProductsController@index')->name('backend.products');
 });
+
+Route::prefix('admin/leden')->group(function() {
+    Route::get('/{lid}', 'UsersController@show');
+    Route::get('/{lid}/edit', 'UsersController@edit');
+    Route::get('/{lid}/update', 'UsersController@update');
+}
