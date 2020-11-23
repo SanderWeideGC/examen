@@ -23,3 +23,7 @@ Route::get('/about', function () {
 Route::get('/kantine', function () {
     return view('frontend.kantine');
 });
+
+Route::get('/contact', function () {
+    return view('frontend.contact');
+});
