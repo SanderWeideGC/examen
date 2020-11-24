@@ -14,7 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.home');
+});
+Route::get('/about', function () {
+    return view('frontend.about');
+});
+
+Route::get('/kantine', function () {
+    return view('frontend.kantine');
+});
+
+Route::get('/contact', function () {
+    return view('frontend.contact');
 });
 
 Route::get('/admin', function () {
