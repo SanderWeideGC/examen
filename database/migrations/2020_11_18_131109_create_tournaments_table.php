@@ -19,6 +19,7 @@ class CreateTournamentsTable extends Migration
             $table->string('TournementDescription');
             $table->string('TournementParticipantAmount');
             $table->string('TournementCloseDate');
+            $table->timestamps();
         });
     }
 

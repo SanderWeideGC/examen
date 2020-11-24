@@ -19,6 +19,7 @@ class CreateReservationsTable extends Migration
             $table->integer('UserID');
             $table->time('ReservationTime');
             $table->date('ReservationDate');
+            $table->timestamps();
         });
     }
 

@@ -22,6 +22,7 @@ class CreateMatchesTable extends Migration
             $table->integer('MatchWinner');
             $table->integer('MatchRound');
             $table->dateTime('MatchDateTime');
+            $table->timestamps();
         });
     }
 
