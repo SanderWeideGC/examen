@@ -21,15 +21,13 @@
                     <ul>
                         <li><a href="#">Inloggen</a></li>
                         <li><a href="#">Registreren</a></li>
-
-
                     </ul>
                 </div>
             </div>
         </div>
         <div class="header-lower clearfix">
             <div class=container>
-                <div class=row><h1 class=logo><a href=index-2.html><img src=images/logo.png alt=image></a></h1>
+                <div class=row><h1 class=logo><a href=/><img src=images/logo.png alt=image></a></h1>
 
                     <div class=menubar>
                         <nav class=navbar>
@@ -42,7 +40,6 @@
                                         <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Over</a></li>
                                         <li><a href=kantine class="{{ Request::path() === 'kantine' ? 'active' : '' }}">Kantine</a></li>
                                         <li><a href=contact class="{{ Request::path() === 'contact' ? 'active' : '' }}">Contact</a></li>
-
                                     </ul>
                                 </div>
                             </div>

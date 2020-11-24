@@ -18,7 +18,7 @@
             <div class=innerWrapper>
                 <ul class="contact_icon clearfix">
                     <li><a href=tel:80052608885263><i class="fa fa-phone"></i> <span>0316 12 25 45 85</span></a></li>
-                    <li><a href=mailto:mail@yoursite.com><i class="fa fa-envelope-o"></i>
+                    <li><a href=mailto:info@dtv.nl><i class="fa fa-envelope-o"></i>
                         <span>info@dtv.nl</span></a></li>
                     <li><a href=#><i class="fa fa-map-marker"></i> <span>J.F Kennedylaan 49</span></a>
                     </li>

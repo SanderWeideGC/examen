@@ -5,194 +5,214 @@
 @endsection
 
 
-    <section class="club_history achivementwrapper bg-white">
-        <div class=container>
-            <div class=row><h2 class=heading>Onze <span>kantine</span></h2>
+<section class=players>
+    <div class=container>
+        <div class=row><h2 class=heading>Koude <span>dranken</span></h2>
 
-                <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                    consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
-                    Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p>
+            <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
+                Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p>
 
-                <div class=wrap-achive>
-                    <ul class=achievement>
-                        <li class=clearfix>
-                            <div class=fig><img src=images/kantine/fanta_drank.png alt=image>
+            <div class="wrapplayer clearfix"><a class="prv prev-player"></a> <a class="nxt next-player"></a>
+                <ul class="boardmember clearfix">
+                    <li class=clearfix>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/fanta_blikje.png) no-repeat center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Fanta Orange</h6>
 
-                            </div>
-                            <div class=figcontentachv><h5 class="headline01 red">Fanta Orange 330ml</h5>
+                                    <p class="uppercaseheading red">Koude dranken</p>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam unde veniam rerum rem
-                                    voluptates reprehenderit, ab dicta eaque in? Molestiae maxime, sunt delenit </p>
-
-
-                            </div>
-                        </li>
-                        <li class=clearfix>
-                            <div class=fig><img src=images/awards/awards02.png alt=image>
-
-                                <div>WINNER 2007, UEFA Champions League</div>
-                            </div>
-                            <div class=figcontentachv><h5 class="headline01 red">winner 2007 , uefa champions
-                                    league</h5>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam unde veniam rerum rem
-                                    voluptates reprehenderit, ab dicta eaque in? Molestiae maxime, sunt deleniti a
-                                    accusantium, qui iure perspiciatis. Esse, tempore?Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Ullam unde veniam rerum rem voluptates reprehenderit,
-                                    ab dicta eaque in? Molestiae maxime, sunt deleniti a accusantium, qui iure
-                                    perspiciatis. Esse, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. Ullam unde veniam rerum rem voluptates reprehenderit, ab dicta eaque in?
-                                    Molestiae maxime, sunt deleniti a accusantium, qui iure perspiciatis. Esse,
-                                    tempore?lorem.</p>
-
-                                <div class="blog-detailsfooter achvfooter clearfix">
-                                    <div class="blog-detailsfooter01 clearfix"><a href=https://www.facebook.com/templatespoint.net
-                                                                                  class="social_link facebook"><i
-                                                class="fa fa-facebook"></i></a> <a href=https://twitter.com/
-                                                                           class="social_link twitter"><i
-                                                class="fa fa-twitter"></i></a> <a href=https://www.behance.net/
-                                                                          class="social_link behance"><i
-                                                class="fa fa-behance"></i></a></div>
-                                    <div class=blog-detailsfooter02><p class=uppercaseheading>octomber 14 ,<span
-                                                class=red>2015</span></p></div>
+                                    <div class="bg-redcolor fig02"><p>€0,90</p></div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                    <ul class=achievement>
-                        <li class=clearfix>
-                            <div class=fig><img src=images/awards/awards03.png alt=image>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/cola_blikje.png) no-repeat top center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Coca Cola</h6>
 
-                                <div>WINNER 2007, UEFA Champions League</div>
-                            </div>
-                            <div class=figcontentachv><h5 class="headline01 red">winner 2007 , uefa champions
-                                    league</h5>
+                                    <p class="uppercaseheading red">Koude dranken</p>
 
-                                <p>The UEFA Champions League is a seasonal association football competition established
-                                    in 1955.[1] The UEFA Champions League is open to the league champions of all UEFA
-                                    (Union of European Football Associations) member associations (except Liechtenstein,
-                                    which has no league competition), as well as to the clubs finishing from second to
-                                    fourth position in the strongest leagues.[2] Prior to the 1992–93 season, the
-                                    tournament was named the European Cup.[1] Originally, only the champions of their
-                                    respective national league and the defending champion of the competition were
-                                    allowed to participate. However, this was changed in 1997 to allow the runners-up of
-                                    the stronger leagues to compete as well.[3] The defending champion of the
-                                    competition did not automatically qualify until the rules were changed in 2005 to
-                                    allow title holders Liverpool to enter the competition.</p>
-
-                                <div class="blog-detailsfooter achvfooter clearfix">
-                                    <div class="blog-detailsfooter01 clearfix"><a href=https://www.facebook.com/templatespoint.net
-                                                                                  class="social_link facebook"><i
-                                                class="fa fa-facebook"></i></a> <a href=https://twitter.com/
-                                                                           class="social_link twitter"><i
-                                                class="fa fa-twitter"></i></a> <a href=https://www.behance.net/
-                                                                          class="social_link behance"><i
-                                                class="fa fa-behance"></i></a></div>
-                                    <div class=blog-detailsfooter02><p class=uppercaseheading>octomber 14 ,<span
-                                                class=red>2015</span></p></div>
+                                    <div class="bg-redcolor fig02"><p>€0,90</p></div>
                                 </div>
                             </div>
-                        </li>
-                        <li class=clearfix>
-                            <div class=fig><img src=images/awards/awards02.png alt=image>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/fern_blikje.png) no-repeat top center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Fernandes Pineapple</h6>
 
-                                <div>WINNER 2007, UEFA Champions League</div>
-                            </div>
-                            <div class=figcontentachv><h5 class="headline01 red">winner 2007 , uefa champions
-                                    league</h5>
+                                    <p class="uppercaseheading red">Koude drank</p>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam unde veniam rerum rem
-                                    voluptates reprehenderit, ab dicta eaque in? Molestiae maxime, sunt deleniti a
-                                    accusantium, qui iure perspiciatis. Esse, tempore?Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Ullam unde veniam rerum rem voluptates reprehenderit,
-                                    ab dicta eaque in? Molestiae maxime, sunt deleniti a accusantium, qui iure
-                                    perspiciatis. Esse, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. Ullam unde veniam rerum rem voluptates reprehenderit, ab dicta eaque in?
-                                    Molestiae maxime, sunt deleniti a accusantium, qui iure perspiciatis. Esse,
-                                    tempore?lorem.</p>
-
-                                <div class="blog-detailsfooter achvfooter clearfix">
-                                    <div class="blog-detailsfooter01 clearfix"><a href=https://www.facebook.com/templatespoint.net
-                                                                                  class="social_link facebook"><i
-                                                class="fa fa-facebook"></i></a> <a href=https://twitter.com/
-                                                                           class="social_link twitter"><i
-                                                class="fa fa-twitter"></i></a> <a href=https://www.behance.net/
-                                                                          class="social_link behance"><i
-                                                class="fa fa-behance"></i></a></div>
-                                    <div class=blog-detailsfooter02><p class=uppercaseheading>octomber 14 ,<span
-                                                class=red>2015</span></p></div>
+                                    <div class="bg-redcolor fig02"><p>€0,80</p></div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                    <ul class=achievement>
-                        <li class=clearfix>
-                            <div class=fig><img src=images/awards/awards03.png alt=image>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/max_blikje.png) no-repeat top center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Coca Cola Max</h6>
 
-                                <div>WINNER 2007, UEFA Champions League</div>
-                            </div>
-                            <div class=figcontentachv><h5 class="headline01 red">winner 2007 , uefa champions
-                                    league</h5>
+                                    <p class="uppercaseheading red">Koude drank</p>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam unde veniam rerum rem
-                                    voluptates reprehenderit, ab dicta eaque in? Molestiae maxime, sunt deleniti a
-                                    accusantium, qui iure perspiciatis. Esse, tempore?Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Ullam unde veniam rerum rem voluptates reprehenderit,
-                                    ab dicta eaque in? Molestiae maxime, sunt deleniti a accusantium, qui iure
-                                    perspiciatis. Esse, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. Ullam unde veniam rerum rem voluptates reprehenderit, ab dicta eaque in?
-                                    Molestiae maxime, sunt deleniti a accusantium, qui iure perspiciatis. Esse,
-                                    tempore?</p>
-
-                                <div class="blog-detailsfooter achvfooter clearfix">
-                                    <div class="blog-detailsfooter01 clearfix"><a href=https://www.facebook.com/templatespoint.net
-                                                                                  class="social_link facebook"><i
-                                                class="fa fa-facebook"></i></a> <a href=https://twitter.com/
-                                                                           class="social_link twitter"><i
-                                                class="fa fa-twitter"></i></a> <a href=https://www.behance.net/
-                                                                          class="social_link behance"><i
-                                                class="fa fa-behance"></i></a></div>
-                                    <div class=blog-detailsfooter02><p class=uppercaseheading>octomber 14 ,<span
-                                                class=red>2015</span></p></div>
+                                    <div class="bg-redcolor fig02"><p>€0,70</p></div>
                                 </div>
                             </div>
-                        </li>
-                        <li class=clearfix>
-                            <div class=fig><img src=images/awards/awards02.png alt=image>
-
-                                <div>WINNER 2007, UEFA Champions League</div>
-                            </div>
-                            <div class=figcontentachv><h5 class="headline01 red">winner 2007 , uefa champions
-                                    league</h5>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam unde veniam rerum rem
-                                    voluptates reprehenderit, ab dicta eaque in? Molestiae maxime, sunt deleniti a
-                                    accusantium, qui iure perspiciatis. Esse, tempore?Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Ullam unde veniam rerum rem voluptates reprehenderit,
-                                    ab dicta eaque in? Molestiae maxime, sunt deleniti a accusantium, qui iure
-                                    perspiciatis. Esse, tempore?Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. Ullam unde veniam rerum rem voluptates reprehenderit, ab dicta eaque in?
-                                    Molestiae maxime, sunt deleniti a accusantium, qui iure perspiciatis. Esse,
-                                    tempore?lorem.</p>
-
-                                <div class="blog-detailsfooter achvfooter clearfix">
-                                    <div class="blog-detailsfooter01 clearfix"><a href=https://www.facebook.com/templatespoint.net
-                                                                                  class="social_link facebook"><i
-                                                class="fa fa-facebook"></i></a> <a href=https://twitter.com/
-                                                                           class="social_link twitter"><i
-                                                class="fa fa-twitter"></i></a> <a href=https://www.behance.net/
-                                                                          class="social_link behance"><i
-                                                class="fa fa-behance"></i></a></div>
-                                    <div class=blog-detailsfooter02><p class=uppercaseheading>octomber 14 ,<span
-                                                class=red>2015</span></p></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<section class=players>
+    <div class=container>
+        <div class=row><h2 class=heading>Warme <span>dranken</span></h2>
+
+            <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
+                Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p>
+
+            <div class="wrapplayer clearfix">
+                <ul class="boardmember clearfix">
+                    <li class=clearfix>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/choco_drink.png) no-repeat center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Warme Chocomelk met Slagroom</h6>
+
+                                    <p class="uppercaseheading red">Warme dranken</p>
+
+                                    <div class="bg-redcolor fig02"><p>€2,50</p></div>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/coffee.png) no-repeat top center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Koffie</h6>
+
+                                    <p class="uppercaseheading red">Warme dranken</p>
+
+                                    <div class="bg-redcolor fig02"><p>€1,50</p></div>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/tea.png) no-repeat top center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Thee</h6>
+                                    <p class="uppercaseheading red">Warme dranken</p>
+                                    <div class="bg-redcolor fig02"><p>€1,00</p></div>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class=players>
+    <div class=container>
+        <div class=row><h2 class=heading>Lekkere <span>Snacks</span></h2>
+
+            <p class=headParagraph>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                consequuntur animi, commodi, voluptatibus labore aperiam fugit maxime quos optio architecto cum?
+                Laborum nesciunt doloribus expedita atque error rem molestias, ducimus.</p>
+
+            <div class="wrapplayer clearfix"><a class="prv prev-player"></a> <a class="nxt next-player"></a>
+                <ul class="boardmember clearfix">
+                    <li class=clearfix>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/snoep.png) no-repeat center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Skittles</h6>
+
+                                    <p class="uppercaseheading red">Snacks</p>
+
+                                <div class="bg-redcolor fig02"><p>€1,50</p></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/koek.png) no-repeat top center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Oreo Original</h6>
+
+                                    <p class="uppercaseheading red">Snacks</p>
+
+                                <div class="bg-redcolor fig02"><p>€1,00</p></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/snoep2.png) no-repeat top center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Haribo Starmix</h6>
+
+                                    <p class="uppercaseheading red">Snacks</p>
+
+                                <div class="bg-redcolor fig02"><p>€2,00</p></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <div class=fig01>
+                                    <div class=memberimg
+                                         style="background:url(images/kantine/chips.png) no-repeat top center"></div>
+                                </div>
+                                <div class="bg-black01 fig02"><h6 class=paragraph02>Doritos Cheese</h6>
+
+                                    <p class="uppercaseheading red">Snacks</p>
+
+                                <div class="bg-redcolor fig02"><p>€1,50</p></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 @endsection

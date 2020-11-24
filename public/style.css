@@ -8332,12 +8332,12 @@ section {
 
 .players {
   padding: 70px 0 0;
-  background-image: url("images/background/heroesBg.jpg");
+  /*background-image: url("images/background/heroesBg.jpg");*/
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
   .players h2 {
-    color: white; }
+    color: black; }
 
 .playerFig {
   position: relative;
@@ -9980,7 +9980,7 @@ a.blacklrnmore {
     color: #ffc7c9; }
 
 .memberimg {
-  height: 250px;
+  height: 400px;
   background-size: cover !important; }
 
 .clubfooter p {

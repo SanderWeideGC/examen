@@ -32,13 +32,11 @@
                 </li>
                 <li class=widget-product><h4 class=footerheading>De <span>kantine</span></h4>
                     <ul class=widget_productdetails>
-                        <li><a href=#>Koude drankjes</a></li>
-                        <li><a href=#>Warme drankjes</a></li>
-                        <li><a href=#>Warme snacks</a></li>
-                        <li><a href=#>To go snacks</a></li>
+                        <li><a href=kantine>Koude dranken</a></li>
+                        <li><a href=kantine>Warme dranken</a></li>
+                        <li><a href=kantine>Snacks</a></li>
                     </ul>
                 </li>
-
                 </li>
             </ul>
         </div>
@@ -46,25 +44,11 @@
     <div class=footer-type02>
         <div class=container>
             <div class=row><a href=index-2.html class=footer-logo><img src=images/logo.png alt=image></a>
-
-                <div class=footer-container>
-                    <ul class=clearfix>
-                        <li><a href=https://www.facebook.com/templatespoint.net class=bigsocial-link><i
-                                    class="fa fa-facebook"></i></a></li>
-                        <li><a href=https://twitter.com/ class=bigsocial-link target=_blank><i
-                                    class="fa fa-twitter"></i></a></li>
-                        <li><a href=https://www.behance.net/ class=bigsocial-link target=_blank><i
-                                    class="fa fa-behance"></i></a></li>
-                    </ul>
-                    <p><a target="_blank" href="">Advies en realisatie Achterhoek Programming </a></p></div>
-
-            </div>
+                <p><a target="_blank" href="">Advies en realisatie Achterhoek Programming </a></p></div>
         </div>
     </div>
 </footer>
-</div>
 <script src=js/vendor/vendor.js></script>
 <script src=js/main.js></script>
 </body>
-
 </html>
