@@ -9,7 +9,7 @@ class ReservationsController extends Controller
 {
     public function index()
     {
-        # code...
+        $reservations = Reservation::latest()->get();
     }
 
     public function show($id)
