@@ -29,7 +29,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
-            $table->boolean('UserIsAdmin');
+            $table->boolean('UserIsAdmin')->default('0')->change();
+            $table->timestamps();
         });
     }
 
