@@ -45,6 +45,6 @@ Route::prefix('admin/banen')->group(function() {
     Route::get('/create', 'LanesController@create')->name('lanes.create');
     Route::get('/{lane}', 'LanesController@show')->name('lanes.show');
     Route::get('/{lane}/edit', 'LanesController@edit')->name('lanes.edit');
-    Route::put('/', 'LanesController@update')->name('lanes.update');
-    Route::delete('/{lane}/delete', 'LanesController@destroy')->name('lanes.destroy');
+    Route::put('/{lane}', 'LanesController@update')->name('lanes.update');
+    Route::get('/{lane}/delete', 'LanesController@destroy')->name('lanes.destroy');
 });

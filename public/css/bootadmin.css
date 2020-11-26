@@ -147,4 +147,14 @@ body {
     .sidebar.toggled {
         margin-left: 0;
     }
+
+    .content {
+        margin-left: 230px;
+        width: calc(100% - 230px) !important;
+        transition: all 0.3s;
+    }
+    .content.uitklap {
+        margin-left: 0;
+        width: 100% !important;
+    }
 }

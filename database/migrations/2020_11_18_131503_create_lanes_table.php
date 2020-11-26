@@ -24,6 +24,7 @@ class CreateLanesTable extends Migration
             $table->date('LaneLastCheck');
             $table->date('LaneLastService');
             $table->string('LaneStatus');
+            $table->timestamps();
         });
     }
 

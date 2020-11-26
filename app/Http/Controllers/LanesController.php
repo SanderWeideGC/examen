@@ -24,7 +24,7 @@ class LanesController extends Controller
     public function store() {
         Lane::create($this->validateLane());
 
-        return redirect('/admin/banen')->with('success', 'A new lane was successfully created!');
+        return redirect('/admin/banen');
     }
 
     public function edit(Lane $lane) {
@@ -34,26 +34,30 @@ class LanesController extends Controller
     public function update(Lane $lane) {
         $lane->update($this->validateLane());
 
-        return redirect($lane->path());
+        return redirect(route('backend.lanes'));
     }
 
-    public function destroy() {
-        $lane->delete();
-
-        return redirect(route('backend.lanes.index'))->with('success', 'The lane was successfully deleted!');
+    public function destroy(Lane $lane, Request $request) {
+        if($request->ajax()){
+            $lane->delete();
+        } else {
+            die("Deze pagina mag alleen via AJAX uitgevoerd worden.");
+        }
     }
 
-    protected function validateLane()
-    {
+    protected function validateLane() {
+        
+
         return request()->validate([
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'email' => 'required|unique:users',
-            'phone_number' => 'required',
-            'address' => 'required',
-            'country' => 'required',
-            'city_town' => 'required',
-            'password' => 'required|same:confirm_password', 'string', 'min:8',
+            'laneName' => 'required',
+            'laneCategory' => 'required',
+            'lanePositioning' => 'required',
+            'laneLenght' => 'required',
+            'laneWidth' => 'required',
+            'laneFlooring' => 'required',
+            'laneLastCheck' => 'required',
+            'laneLastService' => 'required',
+            'laneStatus' => 'required',
         ]);   
     }
 }
