@@ -9,11 +9,9 @@ class ReservationsController extends Controller
 {
     public function index()
     {
-<<<<<<< HEAD
-        $reservations = Reservation::latest()->get();
-=======
-        # code...
->>>>>>> 3a7b17d... crud functions in all controllers
+        $reservations = Reservation::get();
+
+        return view('backend.reservations.index', compact('reservations'));
     }
 
     public function show($id)
@@ -23,12 +21,21 @@ class ReservationsController extends Controller
 
     public function create()
     {
-        # code...
+        return view('backend.reservations.create');
     }
 
     public function store()
     {
-        # code...
+        $reservation = new Reservation();
+
+        $reservation->LaneID = request('reserveringBaanID');
+        $reservation->UserID = request('reserveringLidID');
+        $reservation->ReservationTime = request('reserveringTime');
+        $reservation->ReservationDate = request('reserveringDate');
+
+        $reservation->save();
+
+        return redirect(route('backend.reservations'));
     }
 
     public function edit()
@@ -41,8 +48,9 @@ class ReservationsController extends Controller
         # code...
     }
 
-    public function destroy()
+    public function destroy(Reservation $reservation)
     {
-        # code...
+        $reservation->delete();
+        return redirect(route('backend.reservations'));
     }
 }
