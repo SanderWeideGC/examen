@@ -22,20 +22,42 @@ class UsersController extends Controller
     }
 
     public function store() {
+        User::create($this->validateUser());
+        return redirect('/admin/leden');
+    }
+
+    public function edit(User $user) {
+        return view('backend.users.edit', ['user' =>$user]);
+    }
+
+    public function update(User $user) {
+        $user->update($this->validateUser());
+        return redirect('/admin/leden');
+    }
+
+    public function delete(User $user) {
+        $user->delete();
+        return redirect('/admin/leden');
+    }
+
+    protected function validateUser() {
 
         request()->validate([
-            'UserFirstname' => 'required',
-            'UserLastname' => 'required',
-            'UserBirthdate' => 'required',
+            'firstname' => 'required',
+            'prefix',
+            'lastname' => 'required',
+            'gender',
+            'birthdate' => 'required',
+            'phonenumber',
             'email' => 'required',
-            'UserStreet' => 'required',
-            'UserHousenumber' => 'required',
-            'UserPostalcode' => 'required',
-            'UserCity' => 'required',
-            'UserPassword' => 'required'
+            'street' => 'required',
+            'housenumber' => 'required',
+            'postalcode' => 'required',
+            'city' => 'required',
+            'password' => 'required'
         ]);
-
-        User::create([
+        
+        return [
             'UserFirstname' => request('firstname'),
             'UserPrefix' => request('prefix'),
             'UserLastname' => request('lastname'),
@@ -47,51 +69,8 @@ class UsersController extends Controller
             'UserHousenumber' => request('housenumber'),
             'UserPostalcode' => request('postalcode'),
             'UserCity' => request('city'),
-            'UserPassword' => request('password')
-        ]);
-
-        return redirect('/admin/leden');
-    
-    }
-
-    public function edit(User $user) {
-        return view('backend.users.edit', ['user' =>$user]);
-    }
-
-    public function update(User $user) {
-
-        request()->validate([
-            'UserFirstname' => 'required',
-            'UserLastname' => 'required',
-            'UserBirthdate' => 'required',
-            'email' => 'required',
-            'UserStreet' => 'required',
-            'UserHousenumber' => 'required',
-            'UserPostalcode' => 'required',
-            'UserCity' => 'required',
-            'UserPassword' => 'required'
-        ]);
-
-        $user->UserFirstname = request('firstname');
-        $user->UserPrefix = request('prefix');
-        $user->UserLastname = request('lastname');
-        $user->UserGender = request('gender');
-        $user->UserBirthdate = request('birthdate');
-        $user->UserPhonenumber = request('phonenumber');
-        $user->email = request('email');
-        $user->UserStreet = request('street');
-        $user->UserHousenumber = request('housenumber');
-        $user->UserPostalcode = request('postalcode');
-        $user->UserCity = request('city');
-        $user->UserPassword = request('password');
-
-        $user->save();
-
-        return redirect('/admin/leden');
-    }
-
-    public function destroy(User $user) {
-
+            'password' => request('password')
+        ];
     }
 
 }

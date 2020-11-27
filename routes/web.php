@@ -23,15 +23,16 @@ Route::get('/admin', function () {
 
 Route::prefix('admin')->group(function() {
     Route::get('/leden', 'UsersController@index')->name('backend.users');
-    Route::post('/leden', 'UsersController@store');
     Route::get('/banen', 'LanesController@index')->name('backend.lanes');
     Route::get('/toernooien', 'TournamentsController@index')->name('backend.tournaments');
     Route::get('/kantine', 'ProductsController@index')->name('backend.products');
 });
 
 Route::prefix('admin/leden')->group(function() {
+    Route::post('/', 'UsersController@store');
     Route::get('/toevoegen', 'UsersController@create');
-    Route::get('/{lid}', 'UsersController@show');
-    Route::get('/{lid}/bewerken', 'UsersController@edit');
-    Route::put('/{lid}', 'UsersController@update');
+    Route::get('/{user}', 'UsersController@show');
+    Route::get('/{user}/bewerken', 'UsersController@edit');
+    Route::put('/{user}', 'UsersController@update');
+    Route::get('/{user}/verwijderen', 'UsersController@delete');
 });

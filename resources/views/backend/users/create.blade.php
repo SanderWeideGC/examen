@@ -16,11 +16,11 @@
 
                     <div>
                         
-                        <input placeholder="Voornaam" type="text" name="firstname" value="{{ old('firstname') }}" required>
-                        <input placeholder="Tussenvoegsel" type="text" name="prefix" value="{{ old('prefix') }}" >
-                        <input placeholder="Achternaam" type="text" name="lastname" value="{{ old('lastname') }}" required>
-                        <input placeholder="Geslacht" type="text" name="gender"value="{{ old('gender') }}" >
-                        <input placeholder="Geboortedatum" type="date" name="birthdate" value="{{ old('birthdate') }}" required>
+                        <input placeholder="Voornaam" type="text" name="firstname" required>
+                        <input placeholder="Tussenvoegsel" type="text" name="prefix" >
+                        <input placeholder="Achternaam" type="text" name="lastname" required>
+                        <input placeholder="Geslacht" type="text" name="gender">
+                        <input placeholder="Geboortedatum" type="date" name="birthdate" required>
 
                         @if ($errors->has('firstname')) <p class="error">{{ $errors->first('firstname') }}</p> @endif
                         @if ($errors->has('lastname')) <p class="error">{{ $errors->first('lastname') }}</p> @endif
@@ -30,8 +30,8 @@
 
                     <div>
 
-                        <input placeholder="Telefoonnummer" type="text" name="phonenumber" value="{{ old('phonenumber') }}" >
-                        <input placeholder="Email" type="email" name="email" value="{{ old('email') }}" required>
+                        <input placeholder="Telefoonnummer" type="text" name="phonenumber">
+                        <input placeholder="Email" type="email" name="email" required>
                         
                         @if ($errors->has('email')) <p class="error">{{ $errors->first('email') }}</p> @endif
 
@@ -39,10 +39,10 @@
 
                     <div>
 
-                        <input placeholder="Straat" type="text" name="street" value="{{ old('street') }}" required>
-                        <input placeholder="Huisnummer" type="text" name="housenumber" value="{{ old('housenumber') }}" required>
-                        <input placeholder="Postcode" type="text" name="postalcode" value="{{ old('postalcode') }}" required>
-                        <input placeholder="Woonplaats" type="text" name="city" value="{{ old('city') }}" required>
+                        <input placeholder="Straat" type="text" name="street" required>
+                        <input placeholder="Huisnummer" type="text" name="housenumber" required>
+                        <input placeholder="Postcode" type="text" name="postalcode" required>
+                        <input placeholder="Woonplaats" type="text" name="city" required>
 
                         @if ($errors->has('street')) <p class="error">{{ $errors->first('street') }}</p> @endif
                         @if ($errors->has('housenumber')) <p class="error">{{ $errors->first('housenumber') }}</p> @endif
