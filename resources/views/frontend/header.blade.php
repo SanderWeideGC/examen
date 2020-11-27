@@ -19,8 +19,8 @@
             <div class=container>
                 <div class=row>
                     <ul>
-                        <li><a href="#">Inloggen</a></li>
-                        <li><a href="#">Registreren</a></li>
+                        <li><a href="/login">Inloggen</a></li>
+                        <li><a href="/register">Registreren</a></li>
                     </ul>
                 </div>
             </div>

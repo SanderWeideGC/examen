@@ -48,3 +48,7 @@ Route::prefix('admin/banen')->group(function() {
     Route::put('/', 'LanesController@update')->name('lanes.update');
     Route::delete('/{lane}/delete', 'LanesController@destroy')->name('lanes.destroy');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
