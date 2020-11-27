@@ -7,7 +7,12 @@
 <script src="/js/bootadmin.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#example').DataTable();
+            $('#example').on( 'init.dt', function () {
+              setTimeout(function() {
+                addClickToButton();
+              }, 1250);
+
+            }).DataTable();
         });
     </script>
 
@@ -21,20 +26,23 @@
 </script>
 
   <script>
-    $('.removeLane').click(function() {
-      var confirm = window.confirm("Weet u zeker dat u deze baan wilt verwijderen?");
-      var id = $(this).data('id');
-      if(confirm) {
-          $.ajax(
-          {
-              url: "/admin/banen/"+ id + "/delete",
-              success: function()
-              {
-                location.reload();
-              }
-          }); 
-      }
-    });
+
+    function addClickToButton() {
+      $('.removeLane').click(function() {
+        var confirm = window.confirm("Weet u zeker dat u deze baan wilt verwijderen?");
+        var id = $(this).data('id');
+        if(confirm) {
+            $.ajax(
+            {
+                url: "/admin/banen/"+ id + "/delete",
+                success: function()
+                {
+                  location.reload();
+                }
+            }); 
+        }
+      });
+    }
   </script>
 
 </body>
