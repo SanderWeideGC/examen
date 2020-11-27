@@ -9,7 +9,11 @@ class ReservationsController extends Controller
 {
     public function index()
     {
+<<<<<<< HEAD
         $reservations = Reservation::latest()->get();
+=======
+        # code...
+>>>>>>> 3a7b17d... crud functions in all controllers
     }
 
     public function show($id)
