@@ -5,6 +5,7 @@
 .navbar {
     position: fixed !important;
     width: 100%;
+    z-index: 1;
 }
 
 .main {
@@ -17,6 +18,12 @@
 }
 
 .content {
+    margin-left: 0;
+    width: 100% !important;
+    transition: all 0.3s;
+}
+
+.content.uitklap {
     margin-left: 230px;
     width: calc(100% - 230px) !important;
 }
@@ -40,4 +47,9 @@
 
 i.fas, i.fa {
     padding-right: 5px;
+}
+
+.invalidFeedback {
+    color: rgb(173, 24, 24);
+    font-weight: 600;
 }

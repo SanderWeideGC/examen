@@ -95,7 +95,7 @@
 
                     </div>
                     <div class=result-details>
-                        <div class="content contentresult"><h4>Ben Wennink</h4>
+                        <div class="content contentresult"><h4>Ben Weersink</h4>
 
                             <p>Verloren</p>
 

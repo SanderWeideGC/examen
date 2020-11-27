@@ -1,7 +1,7 @@
 @extends('backend.includes.layout')
 
 @section('content')
-    <div class="content p-4">
+    <div class="content p-4 uitklap">
         <h2 class="mb-4">Dashboard</h2>
         <hr>
 
