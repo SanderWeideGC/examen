@@ -9,53 +9,147 @@
         </div>
 
         <div class="card mb-4">
+
+            <div class="card-header bg-white font-weight-bold">
+                Nieuwe Baan
+            </div>
+
             <div class="card-body">
 
                 <form method="POST" action="/admin/leden">
                 @csrf
 
-                    <div>
-                        
-                        <input placeholder="Voornaam" type="text" name="firstname" required>
-                        <input placeholder="Tussenvoegsel" type="text" name="prefix" >
-                        <input placeholder="Achternaam" type="text" name="lastname" required>
-                        <input placeholder="Geslacht" type="text" name="gender">
-                        <input placeholder="Geboortedatum" type="date" name="birthdate" required>
-
-                        @if ($errors->has('firstname')) <p class="error">{{ $errors->first('firstname') }}</p> @endif
-                        @if ($errors->has('lastname')) <p class="error">{{ $errors->first('lastname') }}</p> @endif
-                        @if ($errors->has('birthdate')) <p class="error">{{ $errors->first('birthdate') }}</p> @endif
-
+                    <div class="row form-group">
+                        <div class="col">
+                            <label>Voornaam</label>
+                            <input type="text" class="form-control" name="firstname" value="{{ old('firstname') }}" placeholder="Voornaam">
+                            @error('firstname')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col">
+                            <label>Tussenvoegsel</label>
+                            <input type="text" class="form-control" name="prefix" value="{{ old('prefix') }}" placeholder="Tussenvoegsel">
+                            @error('prefix')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col">
+                            <label>Achternaam</label>
+                            <input type="text" class="form-control" name="lastname" value="{{ old('lastname') }}" placeholder="Achternaam">
+                            @error('lastname')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
                     </div>
 
-                    <div>
-
-                        <input placeholder="Telefoonnummer" type="text" name="phonenumber">
-                        <input placeholder="Email" type="email" name="email" required>
-                        
-                        @if ($errors->has('email')) <p class="error">{{ $errors->first('email') }}</p> @endif
-
+                    <div class="row form-group">
+                        <div class="col">
+                            <label>Birthdate</label>
+                            <input type="date" class="form-control" name="birthdate" value="{{ old('birthdate') }}" placeholder="dd/mm/yyy">
+                            @error('birthdate')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col">
+                            <label>Geslacht</label>
+                            <select name="gender" class="form-control">
+                                <option value="" disabled selected>Kies de categorie</option>
+                                <option value="1" {{old('gender') == '1' ? 'selected' : ''}}>Man</option>
+                                <option value="2" {{old('gender') == '2' ? 'selected' : ''}}>Vrouw</option>
+                                <option value="3" {{old('gender') == '3' ? 'selected' : ''}}>Anders</option>
+                            @error('gender')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="row form-group">
+                        <div class="col">
+                            <label>E-mailadres</label>
+                            <input type="text" class="form-control" name="email" value="{{ old('email') }}" placeholder="E-mailadres">
+                            @error('email')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col">
+                            <label>Telefoonnummer</label>
+                            <input type="text" class="form-control" name="phonenumber" value="{{ old('phonenumber') }}" placeholder="Telefoonnummer">
+                            @error('phonenumber')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
 
-                        <input placeholder="Straat" type="text" name="street" required>
-                        <input placeholder="Huisnummer" type="text" name="housenumber" required>
-                        <input placeholder="Postcode" type="text" name="postalcode" required>
-                        <input placeholder="Woonplaats" type="text" name="city" required>
+                    <div class="row form-group">
+                        <div class="col">
+                            <label>Straat</label>
+                            <input type="text" class="form-control" name="street" value="{{ old('street') }}" placeholder="Straat">
+                            @error('streets')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col">
+                            <label>Huisnummer</label>
+                            <input type="text" class="form-control" name="housenumber" value="{{ old('housenumber') }}" placeholder="Huisnummer">
+                            @error('housenumber')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
 
-                        @if ($errors->has('street')) <p class="error">{{ $errors->first('street') }}</p> @endif
-                        @if ($errors->has('housenumber')) <p class="error">{{ $errors->first('housenumber') }}</p> @endif
-                        @if ($errors->has('postalcode')) <p class="error">{{ $errors->first('postalcode') }}</p> @endif
-                        @if ($errors->has('city')) <p class="error">{{ $errors->first('city') }}</p> @endif
+                    <div class="row form-group">
+                        <div class="col">
+                            <label>Postcode</label>
+                            <input type="text" class="form-control" name="postalcode" value="{{ old('postalcode') }}" placeholder="Postcode">
+                            @error('postalcode')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="col">
+                            <label>Woonplaats</label>
+                            <input type="text" class="form-control" name="city" value="{{ old('city') }}" placeholder="Woonplaats">
+                            @error('city')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
 
+                    <div class="row form-group">
+                        <div class="col">
+                            <label>Wachtwoord</label>
+                            <input type="password" class="form-control" name="password" value="{{ old('postalcode') }}" placeholder="Wachtwoord">
+                            @error('password')
+                                <span class="invalidFeedback" role="alert">
+                                    <p>{{ $message }}</p>
+                                </span>
+                            @enderror
+                        </div>
                     </div>
                     
-                    <input placeholder="Wachtwoord" type="password" name="password" required>
-
-                    @if ($errors->has('password')) <p class="error">{{ $errors->first('password') }}</p> @endif
-                    
-                    <button type="submit">Toevoegen</button>
+                    <button type="submit" class="btn btn-primary">Opslaan</button>
 
                 </form>
 
