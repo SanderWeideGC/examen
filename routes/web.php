@@ -33,8 +33,22 @@ Route::get('/admin', function () {
 });
 
 Route::prefix('admin')->group(function() {
+
     Route::get('/leden', 'UsersController@index')->name('backend.users');
     Route::get('/banen', 'LanesController@index')->name('backend.lanes');
     Route::get('/toernooien', 'TournamentsController@index')->name('backend.tournaments');
     Route::get('/kantine', 'ProductsController@index')->name('backend.products');
+
+
+});
+
+    Route::prefix('admin/kantine')->group(function() {
+
+    Route::post('/', 'ProductsController@store')->name('products.store');
+    Route::get('/create', 'ProductsController@create')->name('products.create');
+    Route::get('/{product}', 'ProductsController@show')->name('products.show');
+    Route::get('/{product}/edit', 'ProductsController@edit')->name('products.edit');
+    Route::put('/', 'ProductsController@update')->name('products.update');
+    Route::get('/{product}/delete', 'ProductsController@destroy')->name('products.destroy');
+
 });
