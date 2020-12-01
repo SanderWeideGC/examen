@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('UserStreet');
             $table->string('UserHousenumber');
             $table->string('UserPostalcode');
-            $table->string('UserGender');
+            $table->string('UserGender')->nullable();
             $table->date('UserBirthdate');
             $table->string('password');
             $table->string('email')->unique();

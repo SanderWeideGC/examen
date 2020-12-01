@@ -4,14 +4,14 @@
 
     <div class="content p-4">
         <div class="controls">
-            <h2 class="mb-4">Nieuw</h2>
+            <h2 class="mb-4">Nieuw lid toevoegen</h2>
             <hr>
         </div>
 
         <div class="card mb-4">
 
             <div class="card-header bg-white font-weight-bold">
-                Nieuwe Baan
+                Nieuw lid
             </div>
 
             <div class="card-body">
@@ -62,10 +62,11 @@
                         <div class="col">
                             <label>Geslacht</label>
                             <select name="gender" class="form-control">
-                                <option value="" disabled selected>Kies de categorie</option>
+                                <option value="" disabled selected>Selecteer</option>
                                 <option value="1" {{old('gender') == '1' ? 'selected' : ''}}>Man</option>
                                 <option value="2" {{old('gender') == '2' ? 'selected' : ''}}>Vrouw</option>
                                 <option value="3" {{old('gender') == '3' ? 'selected' : ''}}>Anders</option>
+                            </select>
                             @error('gender')
                                 <span class="invalidFeedback" role="alert">
                                     <p>{{ $message }}</p>
