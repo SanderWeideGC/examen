@@ -1,9 +1,9 @@
 @extends('backend.includes.layout')
 
 @section('content')
-    <div class="content p-4 uitklap">
+<div class="content p-4">
         <div class="controls">
-            <h2 class="mb-4">Leden</h2>
+            <h2 class="mb-4">Banen</h2>
             <hr>
             <a class="btn btn-dark btn-lg" href="#" role="button"><i class="fas fa-plus-circle"></i> Toevoegen</a>
         </div>

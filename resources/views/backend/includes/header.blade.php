@@ -37,7 +37,6 @@
     <div class="sidebar sidebar-dark bg-dark">
         <ul class="list-unstyled">
             <li><a href="/admin" class="{{ (request()->segment(1) == 'admin' && request()->segment(2) == '') ? 'active' : '' }}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="/admin/gebruikers" class="{{ (request()->segment(2) == 'gebruikers') ? 'active' : '' }}"><i class="fas fa-utensils"></i> Gebruikers</a></li>
             <li><a href="/admin/leden" class="{{ (request()->segment(2) == 'leden') ? 'active' : '' }}"><i class="fas fa-users"></i> Leden</a></li>
             <li><a href="/admin/banen" class="{{ (request()->segment(2) == 'banen') ? 'active' : '' }}"><i class="fas fa-baseball-ball"></i> Banen</a></li>
             <li><a href="/admin/toernooien" class="{{ (request()->segment(2) == 'toernooien') ? 'active' : '' }}"><i class="fas fa-trophy"></i> Toernooien</a></li>

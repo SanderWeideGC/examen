@@ -39,7 +39,6 @@ Route::prefix('admin')->group(function() {
     Route::get('/kantine', 'ProductsController@index')->name('backend.products');
 });
 
-
 Route::prefix('admin/banen')->group(function() {
     Route::post('/', 'LanesController@store')->name('lanes.store');
     Route::get('/create', 'LanesController@create')->name('lanes.create');
@@ -47,4 +46,13 @@ Route::prefix('admin/banen')->group(function() {
     Route::get('/{lane}/edit', 'LanesController@edit')->name('lanes.edit');
     Route::put('/{lane}', 'LanesController@update')->name('lanes.update');
     Route::get('/{lane}/delete', 'LanesController@destroy')->name('lanes.destroy');
+});
+
+Route::prefix('admin/leden')->group(function() {
+    Route::post('/', 'UsersController@store');
+    Route::get('/toevoegen', 'UsersController@create');
+    Route::get('/{user}', 'UsersController@show');
+    Route::get('/{user}/bewerken', 'UsersController@edit');
+    Route::put('/{user}', 'UsersController@update');
+    Route::get('/{user}/verwijderen', 'UsersController@delete');
 });
