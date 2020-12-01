@@ -10,50 +10,50 @@ class TournamentsController extends Controller
     public function index() {
         $tournaments = Tournament::get();
 
-        return view('backend.tournaments', compact('tournaments'));
+        return view('backend.tournaments.index', compact('tournaments'));
     }
 
-    public function show(Lane $lane) {
-        return view('backend.lanes.show', compact('lane'));
+    public function show(Tournament $tournament) {
+        return view('backend.tournaments.show', compact('tournament'));
     }
 
     public function create() {
-        return view('backend.lanes.create');
+        return view('backend.tournaments.create');
     }
 
     public function store() {
-        Lane::create($this->validateLane());
+        Tournament::create($this->validateTournament());
 
-        return redirect('/admin/banen')->with('success', 'A new lane was successfully created!');
+        return redirect('/admin/toernooien');
     }
 
-    public function edit(Lane $lane) {
-        return view('backend.lanes.edit', compact('lane'));
+    public function edit(Tournament $tournament) {
+        return view('backend.tournaments.edit', compact('tournament'));
     }
 
-    public function update(Lane $lane) {
-        $lane->update($this->validateLane());
+    public function update(Tournament $tournament) {
+        $tournament->update($this->validateTournament());
 
-        return redirect($lane->path());
+        return redirect(route('backend.tournaments'));
     }
 
-    public function destroy() {
-        $lane->delete();
-
-        return redirect(route('backend.lanes.index'))->with('success', 'The lane was successfully deleted!');
+    public function destroy(Tournament $tournament, Request $request) {
+        if($request->ajax()){
+            $tournament->delete();
+        } else {
+            die("Deze pagina mag alleen via AJAX uitgevoerd worden.");
+        }
     }
 
-    protected function validateLane()
+    protected function validateTournament()
     {
         return request()->validate([
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'email' => 'required|unique:users',
-            'phone_number' => 'required',
-            'address' => 'required',
-            'country' => 'required',
-            'city_town' => 'required',
-            'password' => 'required|same:confirm_password', 'string', 'min:8',
+            'tournamentTitle' => 'required',
+            'tournamentDescription' => 'required',
+            'tournamentCloseDate' => 'required',
+            'tournamentParticipantAmount' => 'required',
+            'tournamentStartDate' => 'required',
+            'tournamentEndDate' => 'required',
         ]);   
     }
 }

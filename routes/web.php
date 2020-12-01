@@ -39,14 +39,22 @@ Route::prefix('admin')->group(function() {
     Route::get('/kantine', 'ProductsController@index')->name('backend.products');
 });
 
-
 Route::prefix('admin/banen')->group(function() {
     Route::post('/', 'LanesController@store')->name('lanes.store');
     Route::get('/create', 'LanesController@create')->name('lanes.create');
     Route::get('/{lane}', 'LanesController@show')->name('lanes.show');
     Route::get('/{lane}/edit', 'LanesController@edit')->name('lanes.edit');
-    Route::put('/', 'LanesController@update')->name('lanes.update');
-    Route::delete('/{lane}/delete', 'LanesController@destroy')->name('lanes.destroy');
+    Route::put('/{lane}', 'LanesController@update')->name('lanes.update');
+    Route::get('/{lane}/delete', 'LanesController@destroy')->name('lanes.destroy');
+});
+
+Route::prefix('admin/toernooien')->group(function() {
+    Route::post('/', 'TournamentsController@store')->name('tournaments.store');
+    Route::get('/create', 'TournamentsController@create')->name('tournaments.create');
+    Route::get('/{tournament}', 'TournamentsController@show')->name('tournaments.show');
+    Route::get('/{tournament}/edit', 'TournamentsController@edit')->name('tournaments.edit');
+    Route::put('/{tournament}', 'TournamentsController@update')->name('tournaments.update');
+    Route::get('/{tournament}/delete', 'TournamentsController@destroy')->name('tournaments.destroy');
 });
 
 Auth::routes();

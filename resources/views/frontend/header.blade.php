@@ -19,8 +19,13 @@
             <div class=container>
                 <div class=row>
                     <ul>
-                        <li><a href="/login">Inloggen</a></li>
-                        <li><a href="/register">Registreren</a></li>
+                        @auth 
+                            <li><a href="/account">Account</a></li>
+                        @endauth
+                        @guest 
+                            <li><a href="/login">Inloggen</a></li>
+                            <li><a href="/register">Registreren</a></li>
+                        @endguest
                     </ul>
                 </div>
             </div>
@@ -35,10 +40,13 @@
 
                                 <div class=nav-menu>
                                     <ul class="nav navbar-nav menu-bar" id="nav">
-                                    <li><a href=/ class="{{ Request::path() === '/' ? 'active' : '' }}">Home <span></span> <span></span>
-                                            <span></span> <span></span></a></li>
-                                        <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Over</a></li>
+                                        <li><a href=/ class="{{ Request::path() === '/' ? 'active' : '' }}">Home</a></li>
+                                        @auth
+                                        <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Banen Reserveren</a></li>
+                                        <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Toernooien</a></li>
+                                        @endauth
                                         <li><a href=kantine class="{{ Request::path() === 'kantine' ? 'active' : '' }}">Kantine</a></li>
+                                        <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Over</a></li>
                                         <li><a href=contact class="{{ Request::path() === 'contact' ? 'active' : '' }}">Contact</a></li>
                                     </ul>
                                 </div>

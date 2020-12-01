@@ -5,7 +5,7 @@
         <div class="controls">
             <h2 class="mb-4">Banen</h2>
             <hr>
-            <a class="btn btn-dark btn-lg" href="#" role="button"><i class="fas fa-plus-circle"></i> Toevoegen</a>
+            <a class="btn btn-dark btn-lg" href="{{ route('tournaments.create') }}" role="button"><i class="fas fa-plus-circle"></i> Toevoegen</a>
         </div>
 
         <div class="card mb-4">
@@ -13,16 +13,13 @@
                 <table id="example" class="table table-hover" cellspacing="0" width="100%">
                     <thead>
                         <tr>
-                            <th>Baancode</th>
-                            <th>Naam</th>
-                            <th>Categorie</th>
-                            <th>Ligging</th>
-                            <th>Lengte</th>
-                            <th>Breedte</th>
-                            <th>Vloer</th>
-                            <th>Baancheck datum</th>
-                            <th>Baanservice datum</th>
-                            <th>Status</th>
+                            <th>ID</th>
+                            <th>Titel</th>
+                            <th>Omschrijving</th>
+                            <th>Deelnemers</th>
+                            <th>Sluitdatum</th>
+                            <th>Startdatum</th>
+                            <th>Einddatum</th>
                             <th class="actions">Acties</th>
                         </tr>
                     </thead>
@@ -32,13 +29,13 @@
                                 <td>{{ $tournaments->id }}</td>
                                 <td>{{ $tournaments->TournamentTitle }}</td>
                                 <td>{{ $tournaments->TournamentDescription }}</td>
-                                <td>{{ $tournaments->TournamentParticipantAmount }}</td>
+                                <td>{{ $tournaments->formatParticipantAmount() }}</td>
                                 <td>{{ $tournaments->TournamentCloseDate }}</td>
                                 <td>{{ $tournaments->TournamentStartDate }}</td>
                                 <td>{{ $tournaments->TournamentEndDate }}</td>
                                 <td>
-                                    <a href="#" class="btn btn-icon btn-pill btn-primary" data-toggle="tooltip" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
-                                    <a href="#" class="btn btn-icon btn-pill btn-danger" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></a>
+                                    <a href="{{ route('tournaments.edit', $tournaments) }}" class="btn btn-icon btn-pill btn-primary" data-toggle="tooltip" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
+                                    <button class="btn btn-icon btn-pill btn-danger removeButton" data-id="{{ $tournaments->id }}" data-type="toernooien" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></button>
                                 </td>
                             </tr>
                         @endforeach
