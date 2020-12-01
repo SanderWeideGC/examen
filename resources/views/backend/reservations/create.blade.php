@@ -32,9 +32,18 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label>Tijd</label>
-                        <input type="time" class="form-control" name="reserveringTime" step="1800" min="12:00" max="23:00">
-                        @error('reserveringTime')
+                        <label>Start Tijd</label>
+                        <input type="time" class="form-control" name="reserveringStartTime" step="1800" min="12:00" max="23:00">
+                        @error('reserveringStartTime')
+                            <span class="invalidFeedback" role="alert">
+                                <p>Dit veld is niet goed ingevuld</p>
+                            </span>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label>Eind Tijd</label>
+                        <input type="time" class="form-control" name="reserveringEndTime" step="1800" min="12:00" max="23:00">
+                        @error('reserveringEndTime')
                             <span class="invalidFeedback" role="alert">
                                 <p>Dit veld is niet goed ingevuld</p>
                             </span>

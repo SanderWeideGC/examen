@@ -1,7 +1,7 @@
 @extends('backend.includes.layout')
 
 @section('content')
-    <div class="content p-4">
+    <div class="content p-4 uitklap">
         <div class="controls">
             <h2 class="mb-4">Leden</h2>
             <hr>
@@ -9,7 +9,7 @@
         </div>
 
         <div class="card mb-4">
-            <div class="card-body">
+            <div class="card-body table-responsive">
                 <table id="example" class="table table-hover" cellspacing="0" width="100%">
                     <thead>
                         <tr>

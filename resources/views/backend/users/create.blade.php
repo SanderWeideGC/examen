@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="content p-4">
+    <div class="content p-4 uitklap">
         <div class="controls">
             <h2 class="mb-4">Nieuw lid toevoegen</h2>
             <hr>

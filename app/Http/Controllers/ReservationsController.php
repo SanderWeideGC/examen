@@ -14,9 +14,9 @@ class ReservationsController extends Controller
         return view('backend.reservations.index', compact('reservations'));
     }
 
-    public function show($id)
+    public function show(Reservation $reservation)
     {
-        # code...
+        return view('backend.reservations.show', ['reservation' => $reservation]);
     }
 
     public function create()
@@ -30,7 +30,8 @@ class ReservationsController extends Controller
 
         $reservation->LaneID = request('reserveringBaanID');
         $reservation->UserID = request('reserveringLidID');
-        $reservation->ReservationTime = request('reserveringTime');
+        $reservation->ReservationStartTime = request('reserveringStartTime');
+        $reservation->ReservationEndTime = request('reserveringEndTime');
         $reservation->ReservationDate = request('reserveringDate');
 
         $reservation->save();
@@ -47,7 +48,8 @@ class ReservationsController extends Controller
     {
         $reservation->LaneID = request('reserveringBaanID');
         $reservation->UserID = request('reserveringLidID');
-        $reservation->ReservationTime = request('reserveringTime');
+        $reservation->ReservationStartTime = request('reserveringStartTime');
+        $reservation->ReservationEndTime = request('reserveringEndTime');
         $reservation->ReservationDate = request('reserveringDate');
 
         $reservation->save();
@@ -60,4 +62,28 @@ class ReservationsController extends Controller
         $reservation->delete();
         return redirect(route('backend.reservations'));
     }
+
+    //frontend
+    public function getAvailableTime()
+    {
+        $availableTimes = 
+        [
+            "12:00:00",
+            "13:00:00",
+            "14:00:00",
+            "15:00:00",
+            "16:00:00",
+            "17:00:00",
+            "18:00:00",
+            "19:00:00",
+            "20:00:00",
+            "21:00:00",
+            "22:00:00",
+            "23:00:00",
+
+        ];
+
+
+    }
+
 }

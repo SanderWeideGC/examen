@@ -17,7 +17,8 @@ class CreateReservationsTable extends Migration
             $table->id();
             $table->integer('LaneID');
             $table->integer('UserID');
-            $table->time('ReservationTime');
+            $table->time('ReservationStartTime');
+            $table->time('ReservationEndTime');
             $table->date('ReservationDate');
             $table->timestamps();
         });

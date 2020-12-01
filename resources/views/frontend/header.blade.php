@@ -38,6 +38,7 @@
                                     <li><a href=/ class="{{ Request::path() === '/' ? 'active' : '' }}">Home <span></span> <span></span>
                                             <span></span> <span></span></a></li>
                                         <li><a href=about class="{{ Request::path() === 'about' ? 'active' : '' }}">Over</a></li>
+                                        <li><a href=reserveren class="{{ Request::path() === 'reserveren' ? 'active' : '' }}">Reserveren</a></li>
                                         <li><a href=kantine class="{{ Request::path() === 'kantine' ? 'active' : '' }}">Kantine</a></li>
                                         <li><a href=contact class="{{ Request::path() === 'contact' ? 'active' : '' }}">Contact</a></li>
                                     </ul>

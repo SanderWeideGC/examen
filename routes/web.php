@@ -28,6 +28,10 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 });
 
+Route::get('/reserveren', function () {
+    return view('frontend.reservation');
+});
+
 Route::get('/admin', function () {
     return view('backend.home');
 });
@@ -52,7 +56,7 @@ Route::prefix('admin/banen')->group(function() {
 Route::prefix('admin/leden')->group(function() {
     Route::post('/', 'UsersController@store');
     Route::get('/toevoegen', 'UsersController@create');
-    Route::get('/{user}', 'UsersController@show');
+    Route::get('/{user}', 'UsersController@show')->name('users.show');
     Route::get('/{user}/bewerken', 'UsersController@edit');
     Route::put('/{user}', 'UsersController@update');
     Route::get('/{user}/verwijderen', 'UsersController@delete');
