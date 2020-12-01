@@ -54,6 +54,6 @@ Route::prefix('admin/reserveringen')->group(function() {
     Route::get('/create', 'ReservationsController@create')->name('reservations.create');
     Route::get('/{reservation}', 'ReservationsController@show')->name('reservations.show');
     Route::get('/{reservation}/edit', 'ReservationsController@edit')->name('reservations.edit');
-    Route::put('/', 'ReservationsController@update')->name('reservations.update');
+    Route::put('/{reservation}', 'ReservationsController@update')->name('reservations.update');
     Route::get('/{reservation}/delete', 'ReservationsController@destroy')->name('reservations.destroy');
 });

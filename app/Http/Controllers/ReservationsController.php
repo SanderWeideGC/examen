@@ -38,14 +38,21 @@ class ReservationsController extends Controller
         return redirect(route('backend.reservations'));
     }
 
-    public function edit()
+    public function edit(Reservation $reservation)
     {
-        # code...
+        return view('backend.reservations.edit', ['reservation' => $reservation]);
     }
 
-    public function update()
+    public function update(Reservation $reservation)
     {
-        # code...
+        $reservation->LaneID = request('reserveringBaanID');
+        $reservation->UserID = request('reserveringLidID');
+        $reservation->ReservationTime = request('reserveringTime');
+        $reservation->ReservationDate = request('reserveringDate');
+
+        $reservation->save();
+
+        return redirect(route('reservations.edit', $reservation));
     }
 
     public function destroy(Reservation $reservation)

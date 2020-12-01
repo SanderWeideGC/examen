@@ -30,8 +30,8 @@
                                 <td>{{ $reservations->ReservationTime }}</td>
                                 <td>{{ $reservations->ReservationDate }}</td>
                                 <td>
-                                    <a href="#" class="btn btn-icon btn-pill btn-primary" data-toggle="tooltip" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
-                                <a href="{{ route('reservations.destroy', $reservations) }}" class="btn btn-icon btn-pill btn-danger" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></a>
+                                    <a href="{{ route('reservations.edit', $reservations) }}" class="btn btn-icon btn-pill btn-primary" data-toggle="tooltip" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
+                                    <a href="{{ route('reservations.destroy', $reservations) }}" class="btn btn-icon btn-pill btn-danger" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></a>
                                 </td>
                             </tr>
                         @endforeach
