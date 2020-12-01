@@ -45,7 +45,10 @@ Route::prefix('admin')->group(function() {
     Route::prefix('admin/kantine')->group(function() {
 
     Route::post('/', 'ProductsController@store')->name('products.store');
+
     Route::get('/create', 'ProductsController@create')->name('products.create');
+    Route::get('/', 'ProductsController@index')->name('products.index');
+
     Route::get('/{product}', 'ProductsController@show')->name('products.show');
     Route::get('/{product}/edit', 'ProductsController@edit')->name('products.edit');
     Route::put('/', 'ProductsController@update')->name('products.update');
