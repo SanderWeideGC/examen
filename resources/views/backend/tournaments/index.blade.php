@@ -3,7 +3,7 @@
 @section('content')
 <div class="content p-4">
         <div class="controls">
-            <h2 class="mb-4">Banen</h2>
+            <h2 class="mb-4">Toernooien</h2>
             <hr>
             <a class="btn btn-dark btn-lg" href="{{ route('tournaments.create') }}" role="button"><i class="fas fa-plus-circle"></i> Toevoegen</a>
         </div>

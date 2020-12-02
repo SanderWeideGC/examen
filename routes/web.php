@@ -28,6 +28,11 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 });
 
+Route::prefix('/')->group(function() {
+    Route::post('toernooien', 'TournamentsController@storeParticipation')->name('participant.store');
+    Route::get('toernooien', 'TournamentsController@indexOpenTournaments')->name('frontend.toernooien');
+});
+
 Route::get('/admin', function () {
     return view('backend.home');
 });
@@ -59,4 +64,4 @@ Route::prefix('admin/toernooien')->group(function() {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/account', 'HomeController@index')->name('home');

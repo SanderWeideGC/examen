@@ -1,0 +1,33 @@
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + div {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + div {
+    outline: 2px solid #f00;
+  }
+
+  .tournament {
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+
+  .tournament h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .tournament h2 span {
+    font-size: 17px;
+    font-weight: 500;
+  }

@@ -15,6 +15,7 @@ class CreateParticipantsTable extends Migration
     {
         Schema::create('participants', function (Blueprint $table) {
             $table->id();
+            $table->integer('TournamentID');
             $table->integer('UserID');
             $table->timestamps();
         });

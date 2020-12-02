@@ -9,7 +9,6 @@ class Tournament extends Model
     protected $guarded = [];
 
     public function formatParticipantAmount() {
-        // dd($this->tournamentParticipantAmount);
         switch($this->TournamentParticipantAmount) {
             case 1: 
                 return "4";
@@ -27,5 +26,9 @@ class Tournament extends Model
                 return "32";
             break;
         }
+    }
+
+    public function formatDate() {
+        return date('d-M-Y', strtotime($this->TournamentStartDate));
     }
 }

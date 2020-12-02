@@ -6,7 +6,6 @@
             <h2 class="mb-4">Toernooien</h2>
             <hr>
         </div>
-
         <div class="card mb-4">
             <div class="card-header bg-white font-weight-bold">
                 Nieuw Toernooi
