@@ -1,4 +1,4 @@
-@extends('frontend.layout')
+@extends('frontend.includes.layout')
 @section('header')
 
 <div class=banner id=layerSlider style="width: 100%;">

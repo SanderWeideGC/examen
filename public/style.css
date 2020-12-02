@@ -10496,7 +10496,7 @@ ul.slick-dots {
 
 .contact_form {
   position: relative;
-  padding: 100px 0;
+  /*padding: 100px 0;*/
   background: rgba(0, 0, 0, 0); }
 
 #map-section {
@@ -10513,8 +10513,10 @@ ul.slick-dots {
     margin-bottom: 20px;
     width: 100%;
     float: left; }
-    .formcontact .form-group input {
+    .formcontact .form-group input, .formcontact .form-group select, .formcontact .form-group option {
       height: 60px;
+      padding: 6px 12px;
+      border-radius: 4px;
       background: transparent;
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
@@ -10531,7 +10533,7 @@ ul.slick-dots {
       font-size: 14px;
       color: #979da0;
       font-weight: 700; }
-  .formcontact button {
+  .formcontact .button {
     float: right; }
 
 .parsley-required {

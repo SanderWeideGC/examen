@@ -1,4 +1,4 @@
-@extends('frontend.layout')
+@extends('frontend.includes.layout')
 @section('header-title')
     Contact
 @endsection
@@ -33,23 +33,22 @@
             <div class=contact_form><h2 class=heading> laat een bericht achter <span>via hier</span></h2>
 
                 <form data-parsley-validate="" name=contact class="formcontact clearfix">
-                    <div class=form-group><input type=text class=form-control name=name placeholder=Naam required=""
-                                                 data-parsley-required-message="vul naam in"></div>
-                    <div class=form-group><input type=text class=form-control name=phone placeholder=Telefoonnummer
-                                                 required="" data-parsley-required-message="vul telefoonnummer in">
+                    <div class=form-group>
+                        <input type=text class=form-control name=name placeholder=Naam required="" data-parsley-required-message="vul naam in">
                     </div>
-                    <div class=form-group><input type=text class=form-control name=subject placeholder=Onderwerp
-                                                 required="" data-parsley-required-message="vul onderwerp in">
+                    <div class=form-group>
+                        <input type=text class=form-control name=phone placeholder=Telefoonnummer required="" data-parsley-required-message="vul telefoonnummer in">
                     </div>
-                    <div class=form-group><input type=email class=form-control name=email placeholder=E-mail
-                                                 required="" data-parsley-required-message="vul e-mail in">
+                    <div class=form-group>
+                        <input type=text class=form-control name=subject placeholder=Onderwerp required="" data-parsley-required-message="vul onderwerp in">
                     </div>
-                    <div class=form-group1><textarea class="form-control textas" name=comment placeholder=Bericht
-                                                     required="" data-parsley-minlength=20
-                                                     data-parsley-minlength-message="Vul op zijn minst 20 woorden in...!"
-                                                     data-parsley-validation-threshold=10
-                                                     data-parsley-maxlength=100></textarea></div>
-                    <button type=submit class="btn btn-red" id=send>Verstuur</button>
+                    <div class=form-group>
+                        <input type=email class=form-control name=email placeholder=E-mail required="" data-parsley-required-message="vul e-mail in">
+                    </div>
+                    <div class=form-group1>
+                        <textarea class="form-control textas" name=comment placeholder=Bericht required="" data-parsley-minlength=20 data-parsley-minlength-message="Vul op zijn minst 20 woorden in...!" data-parsley-validation-threshold=10 data-parsley-maxlength=100></textarea>
+                    </div>
+                    <button type=submit class="btn btn-red button" id=send>Verstuur</button>
                     <div class=form-message></div>
                 </form>
             </div>

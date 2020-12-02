@@ -1,4 +1,4 @@
-@extends('frontend.layout')
+@extends('frontend.includes.layout')
 @section('content')
 @section('header-title')
     Kantine

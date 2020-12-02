@@ -16,8 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.home');
 });
+
 Route::get('/about', function () {
     return view('frontend.about');
+});
+
+Route::get('/reserveren', function () {
+    return view('frontend.reserveren');
 });
 
 Route::get('/kantine', function () {
