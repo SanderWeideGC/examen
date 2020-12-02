@@ -50,5 +50,6 @@
 </footer>
 <script src=js/vendor/vendor.js></script>
 <script src=js/main.js></script>
+<script src="/js/custom.js"></script>
 </body>
 </html>

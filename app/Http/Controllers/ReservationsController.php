@@ -64,7 +64,7 @@ class ReservationsController extends Controller
     }
 
     //frontend
-    public function getAvailableTime()
+    public function getAvailableTime($lane, $date)
     {
         $availableTimes = 
         [
@@ -83,7 +83,33 @@ class ReservationsController extends Controller
 
         ];
 
+        $reservations = Reservation::get()->where('ReservationDate', $date)->where('LaneID', $lane);
+        foreach($reservations as $key=>$value){
+            if ($position = array_search($value->ReservationStartTime, $availableTimes, true)){
+                unset($availableTimes[$position]);
+            }
+        }
+        
+        echo json_encode($availableTimes);
 
+    }
+
+    
+    public function userStore()
+    {
+        // dd(request('reservationDate'));
+        $reservation = new Reservation();
+
+        $reservation->LaneID = request('reserveringBaanID');
+        $reservation->UserID = request('reserveringLidID');
+        $reservation->ReservationStartTime = request('reserveringStartTime');
+        $reservation->ReservationEndTime = date('H:i:s', strtotime(request('reserveringStartTime') . ' +1 hour'));
+        $reservation->ReservationDate = request('reservationDate');
+
+        $reservation->save();
+        
+
+        return redirect(route('frontend.reservation'));
     }
 
 }
