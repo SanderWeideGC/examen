@@ -18,9 +18,7 @@ class ProductsController extends Controller
 
     public function show($id)
     {
-//        $products = Products::find($id);
-//
-//        return view('backend.products', ['products' => $products]);$products
+
     }
 
     public function create()
@@ -32,9 +30,9 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-        'ProductCategory' => 'required',
-        'ProductName' => 'required',
-        'ProductPrice' => 'required'
+            'ProductCategory' => 'required',
+            'ProductName' => 'required',
+            'ProductPrice' => 'required'
         ]);
 
         $product = new Product([
@@ -47,18 +45,34 @@ class ProductsController extends Controller
         return redirect(route('products.index'))->with('Product toegevoegd!');
     }
 
-    public function edit(Product $products)
+    public function edit(Product $product)
     {
-
+        return view('backend.products.edit', compact('product'));
     }
 
-    public function update(Request $request, Product $products)
+    public function update(Product $product)
     {
+        request()->validate([
+            'ProductCategory' => 'required',
+            'ProductName' => 'required',
+            'ProductPrice' => 'required'
+        ]);
 
+        $product->ProductName = request()->get('ProductName');
+        $product->ProductCategory = request()->get('ProductCategory');
+        $product->ProductPrice = request()->get('ProductPrice');
+
+        $product->save();
+        return redirect(route('products.index'))->with('succes', 'Product gewijzigd!');
     }
 
-    public function destroy()
+    public function destroy($id)
     {
+        $product = Product::find($id);
+        $product->delete();
+
+        return redirect(route('products.index'))->with('succes', 'Product verwijderd!');
+
 
     }
 

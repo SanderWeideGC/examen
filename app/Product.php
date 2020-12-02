@@ -11,4 +11,21 @@ class Product extends Model
         'ProductName',
         'ProductPrice'
     ];
+
+    public function formatProductCategory() {
+        switch($this->ProductCategory) {
+            case 1:
+                return "Koude dranken";
+                break;
+
+            case 2:
+                return "Warme dranken";
+                break;
+
+            case 3:
+                return "Snacks";
+                break;
+
+        }
+    }
 }

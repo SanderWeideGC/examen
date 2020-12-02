@@ -24,9 +24,9 @@
                     @foreach($products as $product)
                         <tr>
                             <td>{{ $product->id }}</td>
-                            <td>{{ $product->ProductCategory }}</td>
+                            <td>{{ $product->formatProductCategory() }}</td>
                             <td>{{ $product->ProductName }}</td>
-                            <td>{{ $product->ProductPrice }}</td>
+                            <td>€ {{ $product->ProductPrice }}</td>
                             <td>
                                 <a href="{{ route('products.edit', $product) }}" class="btn btn-icon btn-pill btn-primary" data-toggle="tooltip" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
                                 <a href="{{ route('products.destroy', $product) }}" class="btn btn-icon btn-pill btn-danger" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></a>
