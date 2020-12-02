@@ -25,12 +25,16 @@ Route::get('/reserveren', function () {
     return view('frontend.reserveren');
 });
 
+Route::get('/contact', function () {
+    return view('frontend.contact');
+});
+
 Route::get('/kantine', function () {
     return view('frontend.kantine');
 });
 
-Route::get('/contact', function () {
-    return view('frontend.contact');
+Route::get('/reserveren', function () {
+    return view('frontend.reserveren');
 });
 
 Route::get('/admin', function () {

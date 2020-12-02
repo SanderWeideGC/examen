@@ -4,7 +4,6 @@
     Kantine
 @endsection
 
-
 <section class=players>
     <div class=container>
         <div class=row><h2 class=heading>Koude <span>dranken</span></h2>
