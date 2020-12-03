@@ -33,15 +33,6 @@
             </select>
         </div>
         <div class="form-group">
-            <label>Baan ID</label>
-            <input type="text" class="form-control" name="reserveringBaanID" placeholder="Baan ID">
-            @error('reserveringBaanID')
-                <span class="invalidFeedback" role="alert">
-                    <p>Dit veld is niet goed ingevuld</p>
-                </span>
-            @enderror
-        </div>
-        <div class="form-group">
             <label>Lid ID</label>
             <input type="text" class="form-control" name="reserveringLidID" placeholder="Lid ID">
             @error('reserveringLidID')
