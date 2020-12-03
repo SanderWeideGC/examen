@@ -57,8 +57,7 @@
                         <div>
                             <div>
                                 <div class=fig01>
-                                    <div class=memberimg
-                                         style="background:url(images/boardMember/collega3.jpg) no-repeat top center"></div>
+                                    <div class=memberimg style="background:url(images/boardMember/collega3.jpg) no-repeat top center"></div>
                                 </div>
                                 <div class="bg-black01 fig02"><h6 class=paragraph02>Maria Lagos</h6>
                                     <p class="uppercaseheading red">Medewerker</p>

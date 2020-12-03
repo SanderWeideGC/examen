@@ -44,6 +44,7 @@ Route::get('/admin', function () {
 });
 
 Route::prefix('admin')->group(function() {
+
     Route::get('/leden', 'UsersController@index')->name('backend.users');
     Route::get('/banen', 'LanesController@index')->name('backend.lanes');
     Route::get('/reserveringen', 'ReservationsController@index')->name('backend.reservations');
@@ -76,4 +77,14 @@ Route::prefix('admin/reserveringen')->group(function() {
     Route::get('/{reservation}/edit', 'ReservationsController@edit')->name('reservations.edit');
     Route::put('/{reservation}', 'ReservationsController@update')->name('reservations.update');
     Route::get('/{reservation}/delete', 'ReservationsController@destroy')->name('reservations.destroy');
+});
+
+Route::prefix('admin/kantine')->group(function() {
+    Route::post('/', 'ProductsController@store')->name('products.store');
+    Route::get('/create', 'ProductsController@create')->name('products.create');
+    Route::get('/', 'ProductsController@index')->name('products.index');
+    Route::get('/{product}', 'ProductsController@show')->name('products.show');
+    Route::get('/{product}/edit', 'ProductsController@edit')->name('products.edit');
+    Route::put('/{product}', 'ProductsController@update')->name('products.update');
+    Route::get('/{product}/delete', 'ProductsController@destroy')->name('products.destroy');
 });
