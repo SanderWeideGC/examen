@@ -43,8 +43,9 @@
         </div>
         <div class="form-group">
             <label>Start tijd</label>
-            <select id="time" name="reserveringStartTime"></select>
+            <select id="time" name="reserveringStartTime">
             <option value="" disabled selected>kies een tijd</option>
+            </select>
         </div>
         <button type="submit" class="btn btn-primary">Opslaan</button>
     </form>
