@@ -21,7 +21,7 @@
         </div>
         <label>Baan ID</label>
         <div class="form-group">
-            <select id="reservationLane">
+            <select id="reservationLane" name="reservationLane">
             <option value="" disabled selected>selecteer een baan</option>
             <option value="1">1</option>
             <option value="2">2</option>
