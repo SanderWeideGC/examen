@@ -43,7 +43,7 @@
     </div>
     <div class=footer-type02>
         <div class=container>
-            <div class=row><a href=index-2.html class=footer-logo><img src=images/logo.png alt=image></a>
+            <div class=row><a href=index-2.html class=footer-logo><img src=images/logo-wit.png alt=image></a>
                 <p><a target="_blank" href="">Advies en realisatie Achterhoek Programming </a></p></div>
         </div>
     </div>

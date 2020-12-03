@@ -7397,7 +7397,8 @@ h6 {
       position: relative; }
       .booking-fig h2:after {
         position: absolute;
-        background: url("images/logo.png");
+        background: url("images/logo-zwart.png");
+        background-size: 490px;
         content: '';
         width: 140px;
         top: -119px;
