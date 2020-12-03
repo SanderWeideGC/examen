@@ -100,7 +100,7 @@ class ReservationsController extends Controller
         // dd(request('reservationDate'));
         $reservation = new Reservation();
 
-        $reservation->LaneID = request('reserveringBaanID');
+        $reservation->LaneID = request('reservationLane');
         $reservation->UserID = request('reserveringLidID');
         $reservation->ReservationStartTime = request('reserveringStartTime');
         $reservation->ReservationEndTime = date('H:i:s', strtotime(request('reserveringStartTime') . ' +1 hour'));
