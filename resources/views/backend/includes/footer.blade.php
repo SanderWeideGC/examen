@@ -28,7 +28,7 @@
   <script>
 
     function addClickToButton() {
-      $('.removeLane').click(function() {
+      $('.removeButton').click(function() {
         var confirm = window.confirm("Weet u zeker dat u deze baan wilt verwijderen?");
         var id = $(this).data('id');
         if(confirm) {
