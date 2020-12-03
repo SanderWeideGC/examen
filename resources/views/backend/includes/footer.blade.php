@@ -18,32 +18,30 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118868344-1"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-    gtag('config', 'UA-118868344-1');
+gtag('config', 'UA-118868344-1');
+
+
+function addClickToButton() {
+$('.removeButton').click(function() {
+  var confirm = window.confirm("Weet u zeker dat u deze baan wilt verwijderen?");
+  var id = $(this).data('id');
+  var type = $(this).data('type');
+  if(confirm) {
+      $.ajax(
+      {
+          url: "/admin/" + type + "/"+ id + "/delete",
+          success: function()
+          {
+            location.reload();
+          }
+      }); 
+  }
+});
+}
 </script>
-
-  <script>
-
-    function addClickToButton() {
-      $('.removeButton').click(function() {
-        var confirm = window.confirm("Weet u zeker dat u deze baan wilt verwijderen?");
-        var id = $(this).data('id');
-        if(confirm) {
-            $.ajax(
-            {
-                url: "/admin/banen/"+ id + "/delete",
-                success: function()
-                {
-                  location.reload();
-                }
-            }); 
-        }
-      });
-    }
-  </script>
-
 </body>
 </html>

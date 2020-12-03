@@ -41,18 +41,42 @@ Route::get('/reserveren/time/{lane}/{date}', 'ReservationsController@getAvailabl
 
 Route::get('/admin', function () {
     return view('backend.home');
+Route::prefix('/')->group(function() {
+    Route::post('toernooien', 'TournamentsController@storeParticipation')->name('participant.store');
+    Route::get('toernooien', 'TournamentsController@indexOpenTournaments')->name('frontend.toernooien');
 });
 
-Route::prefix('admin')->group(function() {
 
+Auth::routes();
+
+Route::get('/account', 'HomeController@index')->name('home');
+
+
+Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
+    Route::get('/', function () {
+        return view('backend.home');
+    });   
+
+    
     Route::get('/leden', 'UsersController@index')->name('backend.users');
     Route::get('/banen', 'LanesController@index')->name('backend.lanes');
     Route::get('/reserveringen', 'ReservationsController@index')->name('backend.reservations');
     Route::get('/toernooien', 'TournamentsController@index')->name('backend.tournaments');
     Route::get('/kantine', 'ProductsController@index')->name('backend.products');
-});
+    
+    Route::prefix('/toernooien')->group(function() {
+        Route::post('/', 'TournamentsController@store')->name('tournaments.store');
+        Route::get('/create', 'TournamentsController@create')->name('tournaments.create');
+        Route::get('/{tournament}', 'TournamentsController@show')->name('tournaments.show');
+        Route::get('/{tournament}/edit', 'TournamentsController@edit')->name('tournaments.edit');
+        Route::put('/{tournament}', 'TournamentsController@update')->name('tournaments.update');
+        Route::get('/{tournament}/delete', 'TournamentsController@destroy')->name('tournaments.destroy');
+    });
 
-Route::prefix('admin/banen')->group(function() {
+
+    
+
+Route::prefix('/banen')->group(function() {
     Route::post('/', 'LanesController@store')->name('lanes.store');
     Route::get('/create', 'LanesController@create')->name('lanes.create');
     Route::get('/{lane}', 'LanesController@show')->name('lanes.show');
@@ -61,7 +85,7 @@ Route::prefix('admin/banen')->group(function() {
     Route::get('/{lane}/delete', 'LanesController@destroy')->name('lanes.destroy');
 });
 
-Route::prefix('admin/leden')->group(function() {
+Route::prefix('/leden')->group(function() {
     Route::post('/', 'UsersController@store');
     Route::get('/toevoegen', 'UsersController@create');
     Route::get('/{user}', 'UsersController@show')->name('users.show');
@@ -70,7 +94,7 @@ Route::prefix('admin/leden')->group(function() {
     Route::get('/{user}/verwijderen', 'UsersController@delete');
 });
 
-Route::prefix('admin/reserveringen')->group(function() {
+Route::prefix('/reserveringen')->group(function() {
     Route::post('/', 'ReservationsController@store')->name('reservations.store');
     Route::get('/create', 'ReservationsController@create')->name('reservations.create');
     Route::get('/{reservation}', 'ReservationsController@show')->name('reservations.show');
@@ -79,7 +103,7 @@ Route::prefix('admin/reserveringen')->group(function() {
     Route::get('/{reservation}/delete', 'ReservationsController@destroy')->name('reservations.destroy');
 });
 
-Route::prefix('admin/kantine')->group(function() {
+Route::prefix('/kantine')->group(function() {
     Route::post('/', 'ProductsController@store')->name('products.store');
     Route::get('/create', 'ProductsController@create')->name('products.create');
     Route::get('/', 'ProductsController@index')->name('products.index');
@@ -87,4 +111,11 @@ Route::prefix('admin/kantine')->group(function() {
     Route::get('/{product}/edit', 'ProductsController@edit')->name('products.edit');
     Route::put('/{product}', 'ProductsController@update')->name('products.update');
     Route::get('/{product}/delete', 'ProductsController@destroy')->name('products.destroy');
+});
+    Route::put('/{lane}', 'LanesController@update')->name('lanes.update');
+    Route::get('/{lane}/delete', 'LanesController@destroy')->name('lanes.destroy');
+});
+
+
+
 });
