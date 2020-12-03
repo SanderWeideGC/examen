@@ -28,7 +28,15 @@ class Tournament extends Model
         }
     }
 
-    public function formatDate() {
-        return date('d-M-Y', strtotime($this->TournamentStartDate));
+    public function formatStartDate() {
+        return date('d M Y', strtotime($this->TournamentStartDate));
+    }
+
+    public function formatEndDate() {
+        return date('d M Y', strtotime($this->TournamentEndDate));
+    }
+
+    public function formatCloseDate() {
+        return date('d M Y', strtotime($this->TournamentCloseDate));
     }
 }

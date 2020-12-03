@@ -41,3 +41,31 @@
 i.fas, i.fa {
     padding-right: 5px;
 }
+
+.showButton {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.showButton:hover {
+    background-color: #269c41;
+    color: #ffffff;
+}
+
+.actions i.fas, .actions i.fa {
+    padding: 0;
+}
+
+.actions .btn-icon {
+    padding: .375rem .55rem;
+}
+
+.tournamentRow {
+    margin-left: 0 !important;
+}
+
+.tournamentParticipant i.fas {
+    float: right;
+    padding-top: 4px;
+    color: #000;
+}

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Tournament;
 use App\Participant;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,7 +17,13 @@ class TournamentsController extends Controller
     }
 
     public function show(Tournament $tournament) {
-        return view('backend.tournaments.show', compact('tournament'));
+        $participants = Participant::where('TournamentID', $tournament->id)->get();
+        $data = [];
+        foreach($participants as $partic) {
+            $user = User::where('id', $partic->UserID)->get();
+            array_push($data, $user);
+        }
+        return view('backend.tournaments.show', compact(['tournament', 'data']));
     }
 
     public function create() {

@@ -34,6 +34,7 @@
                                 <td>{{ $tournaments->TournamentStartDate }}</td>
                                 <td>{{ $tournaments->TournamentEndDate }}</td>
                                 <td>
+                                    <a href="{{ route('tournaments.show', $tournaments) }}" class="btn btn-icon btn-pill showButton" data-toggle="tooltip" title="Show"><i class="fas fa-eye"></i></a>
                                     <a href="{{ route('tournaments.edit', $tournaments) }}" class="btn btn-icon btn-pill btn-primary" data-toggle="tooltip" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
                                     <button class="btn btn-icon btn-pill btn-danger removeButton" data-id="{{ $tournaments->id }}" data-type="toernooien" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></button>
                                 </td>

@@ -20,14 +20,16 @@
 
     <div class="navbar-collapse collapse">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-envelope"></i> 5</a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-bell"></i> 3</a></li>
             <li class="nav-item dropdown">
-                <a href="#" id="dd_user" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Doe</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd_user">
-                    <a href="#" class="dropdown-item">Profiel</a>
-                    <a href="#" class="dropdown-item">Uitloggen</a>
-                </div>
+            <a href="#" id="dd_user" class="nav-link"><i class="fa fa-user"></i>{{ Auth::user()->UserFirstname }}</a>
+            </li>
+            <li>
+                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();"><i class="fas fa-sign-out-alt"></i>Uitloggen</a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
             </li>
         </ul>
     </div>
