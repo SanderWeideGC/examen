@@ -1,10 +1,12 @@
-@extends('layouts.app')
-
+@extends('../frontend/layout')
+@section('header-title')
+    Registreren
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+        <div class="col-md-12">
+            <div class="contact_form">
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">

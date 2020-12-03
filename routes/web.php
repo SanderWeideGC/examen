@@ -107,3 +107,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
         Route::get('/{product}/delete', 'ProductsController@destroy')->name('products.destroy');
     });
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

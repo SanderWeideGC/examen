@@ -1,10 +1,12 @@
-@extends('layouts.app')
-
+@extends('../frontend/layout')
+@section('header-title')
+    Inloggen
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+        <div class="col-md-12">
+            <div class="contact_form">
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
@@ -17,7 +19,7 @@
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-                                @error('email')
+                                @error('email') 
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -54,7 +56,7 @@
                                 <button type="submit" class="btn btn-primary">Login</button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">Wachtwoord Vergeten?</a>
+                                    <a class="btn-link" href="{{ route('password.request') }}">Wachtwoord Vergeten?</a>
                                 @endif
                             </div>
                         </div>
