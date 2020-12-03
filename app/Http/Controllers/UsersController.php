@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Hash;
+use Illuminate\Support\Facades\Hash;
 
 class UsersController extends Controller
 {
@@ -47,9 +47,9 @@ class UsersController extends Controller
             'firstname' => 'required',
             'prefix',
             'lastname' => 'required',
-            'gender',
+            'gender' => 'required',
             'birthdate' => 'required',
-            'phonenumber',
+            'phonenumber' => 'required',
             'email' => 'required',
             'street' => 'required',
             'housenumber' => 'required',
@@ -70,7 +70,7 @@ class UsersController extends Controller
             'UserHousenumber' => request('housenumber'),
             'UserPostalcode' => request('postalcode'),
             'UserCity' => request('city'),
-            'password' => request('password')
+            'password' => Hash::make(request('password'))
         ];
     }
 

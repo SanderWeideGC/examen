@@ -32,17 +32,17 @@
                                     {{ $user->UserPrefix != "" ? $user->UserPrefix ." " : "" }} 
                                     {{ $user->UserLastname }}
                                 </td>
-                                <td>{{ $user->UserGender }}</td>
+                                <td>{{ $user->formatGender() }}</td>
                                 <td>{{ $user->UserBirthdate }}</td>
                                 <td>{{ $user->UserPhonenumber }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>{{ $user->UserStreet }} 
-                                {{ $user->UserHousenumber }}</td>
+                                <td>{{ $user->UserHousenumber }}</td>
                                 <td>{{ $user->UserPostalcode }}</td>
                                 <td>{{ $user->UserCity }}</td>
                                 <td>
                                     <a href="leden/{{ $user->id }}/bewerken" class="btn btn-icon btn-pill btn-primary" data-toggle="tooltip" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
-                                    <a href="leden/{{ $user->id }}/verwijderen" class="btn btn-icon btn-pill btn-danger" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></a>
+                                    <button class="btn btn-icon btn-pill btn-danger removeButton" data-id="{{ $user->id }}" data-type="leden" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></button>
                                 </td>
                             </tr>
                         @endforeach

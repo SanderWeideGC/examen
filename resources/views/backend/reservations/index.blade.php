@@ -34,7 +34,7 @@
                                 <td>
                                     <a href="{{ route('reservations.show', $reservations) }}" class="btn btn-icon btn-pill btn-info" data-toggle="tooltip" title="Show"><i class="fa fa-fw fa-eye"></i></a>
                                     <a href="{{ route('reservations.edit', $reservations) }}" class="btn btn-icon btn-pill btn-primary" data-toggle="tooltip" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
-                                    <a href="{{ route('reservations.destroy', $reservations) }}" class="btn btn-icon btn-pill btn-danger" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></a>
+                                    <button class="btn btn-icon btn-pill btn-danger removeButton" data-id="{{ $reservations->id }}" data-type="reserveringen" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></button>
                                 </td>
                             </tr>
                         @endforeach

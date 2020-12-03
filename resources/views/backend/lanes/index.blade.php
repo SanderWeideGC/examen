@@ -42,7 +42,7 @@
                                     <td>{{ $lanes->formatStatus() }}</td>
                                     <td>
                                         <a href="{{ route('lanes.edit', $lanes) }}" class="btn btn-icon btn-pill btn-primary" data-toggle="tooltip" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
-                                        <button class="btn btn-icon btn-pill btn-danger removeButton" data-id="{{ $lanes->id }}" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></button>
+                                        <button class="btn btn-icon btn-pill btn-danger removeButton" data-id="{{ $lanes->id }}" data-type="banen" data-toggle="tooltip" title="Delete"><i class="fa fa-fw fa-trash"></i></button>
                                     </td>
                                 </tr>
                             </a>

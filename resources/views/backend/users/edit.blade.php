@@ -63,10 +63,10 @@
                         <div class="col">
                             <label>Geslacht</label>
                             <select name="gender" class="form-control">
-                                <option value="" disabled {{$user->UserBirthdate == '' ? 'selected' : ''}}>Selecteer</option>
-                                <option value="man" {{$user->UserBirthdate == 'man' ? 'selected' : ''}}>Man</option>
-                                <option value="vrouw" {{$user->UserBirthdate == 'vrouw' ? 'selected' : ''}}>Vrouw</option>
-                                <option value="anders" {{$user->UserBirthdate == 'anders' ? 'selected' : ''}}>Anders</option>
+                                <option value="" disabled {{$user->UserGender == '' ? 'selected' : ''}}>Selecteer</option>
+                                <option value="1" {{$user->UserGender == '1' ? 'selected' : ''}}>Man</option>
+                                <option value="2" {{$user->UserGender == '2' ? 'selected' : ''}}>Vrouw</option>
+                                <option value="3" {{$user->UserGender == '3' ? 'selected' : ''}}>Anders</option>
                             </select>
                             @error('gender')
                                 <span class="invalidFeedback" role="alert">

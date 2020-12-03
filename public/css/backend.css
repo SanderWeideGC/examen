@@ -52,11 +52,11 @@ i.fas, i.fa {
 .invalidFeedback {
     color: rgb(173, 24, 24);
     font-weight: 600;
-};
+}
 
 .showButton {
     background-color: #28a745;
-    color: #ffffff;
+    color: white;
 }
 
 .showButton:hover {

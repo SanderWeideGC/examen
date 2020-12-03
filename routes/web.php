@@ -75,17 +75,17 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
         Route::get('/create', 'LanesController@create')->name('lanes.create');
         Route::get('/{lane}', 'LanesController@show')->name('lanes.show');
         Route::get('/{lane}/edit', 'LanesController@edit')->name('lanes.edit');
-        Route::put('/', 'LanesController@update')->name('lanes.update');
+        Route::put('/{lane}', 'LanesController@update')->name('lanes.update');
         Route::get('/{lane}/delete', 'LanesController@destroy')->name('lanes.destroy');
     });
 
     Route::prefix('/leden')->group(function() {
-        Route::post('/', 'UsersController@store');
-        Route::get('/toevoegen', 'UsersController@create');
+        Route::post('/', 'UsersController@store')->name('users.store');
+        Route::get('/toevoegen', 'UsersController@create')->name('users.create');
         Route::get('/{user}', 'UsersController@show')->name('users.show');
-        Route::get('/{user}/bewerken', 'UsersController@edit');
-        Route::put('/{user}', 'UsersController@update');
-        Route::get('/{user}/verwijderen', 'UsersController@delete');
+        Route::get('/{user}/bewerken', 'UsersController@edit')->name('users.edit');
+        Route::put('/{user}', 'UsersController@update')->name('users.update');
+        Route::get('/{user}/delete', 'UsersController@delete')->name('users.destroy');
     });
 
     Route::prefix('/reserveringen')->group(function() {

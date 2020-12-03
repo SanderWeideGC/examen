@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'UserFirstName', 'UserPrefix', 'UserLastName', 'UserPhonenumber', 'UserCity', 'UserStreet', 'UserHousenumber', 'UserPostalcode', 'UserGender', 'UserBirthdate', 'password', 'email', 'UserIsAmin'
+        'UserFirstname', 'UserPrefix', 'UserLastname', 'UserPhonenumber', 'UserCity', 'UserStreet', 'UserHousenumber', 'UserPostalcode', 'UserGender', 'UserBirthdate', 'password', 'email', 'UserIsAmin'
     ];
 
     /**
@@ -36,4 +36,20 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function formatGender() {
+        switch($this->UserGender) {
+            case 1: 
+                return "Man";
+            break;
+
+            case 2: 
+                return "Vrouw";
+            break;
+
+            case 3: 
+                return "Anders";
+            break;
+        }
+    }
 }

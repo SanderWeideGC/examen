@@ -27,7 +27,7 @@
                     @foreach($data as $info) 
 
                         @foreach($info as $user)
-                            <p class="tournamentParticipant">{{ $user->UserFirstname }} {{ $user->UserLastname }} <a href="#"><i class="fas fa-eye"></i></a></p>
+                            <p class="tournamentParticipant">{{ $user->UserFirstname }} {{ $user->UserLastname }} <a href="{{ route('users.show', $user) }}"><i class="fas fa-eye"></i></a></p>
                         @endforeach
 
                     @endforeach
