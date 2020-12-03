@@ -33,7 +33,7 @@
         </div>
         <div class="header-lower clearfix">
             <div class=container>
-                <div class=row><h1 class=logo><a href=/><img src=images/logo.png alt=image></a></h1>
+                <div class=row><h1 class=logo><a href=/><img src="images/logo-wit.png" alt="DTV logo" style="max-width:180%"></a></h1>
 
                     <div class=menubar>
                         <nav class=navbar>
