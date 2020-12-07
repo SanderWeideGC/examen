@@ -30,7 +30,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/reserveren', function () {
-    return view('frontend.reservation');
+    return view('frontend.reservation', ["userID"=>Auth::id()]);
 })->name('frontend.reservation');
 
 Route::post('/reserveren', 'ReservationsController@userStore')->name('user.reservations.store');
