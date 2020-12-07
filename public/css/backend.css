@@ -54,16 +54,6 @@ i.fas, i.fa {
     font-weight: 600;
 }
 
-.showButton {
-    background-color: #28a745;
-    color: white;
-}
-
-.showButton:hover {
-    background-color: #269c41;
-    color: #ffffff;
-}
-
 .actions i.fas, .actions i.fa {
     padding: 0;
 }
@@ -80,4 +70,14 @@ i.fas, i.fa {
     float: right;
     padding-top: 4px;
     color: #000;
+}
+
+.reservationDate {
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.isAdmin {
+    position: relative;
+    top: 2px;
 }

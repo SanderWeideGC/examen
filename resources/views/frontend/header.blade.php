@@ -22,6 +22,14 @@
                     <ul>
                         @auth 
                             <li><a href="/account">Account</a></li>
+                            <li>
+                                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();"><i class="fas fa-sign-out-alt"></i>Uitloggen</a>
+                
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                            </li>
                         @endauth
                         @guest 
                             <li><a href="/login">Inloggen</a></li>

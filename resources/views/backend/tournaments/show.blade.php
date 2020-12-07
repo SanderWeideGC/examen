@@ -5,6 +5,7 @@
         <div class="controls">
             <h2 class="mb-4">Toernooien</h2>
             <hr>
+            <a class="btn btn-dark btn-lg" href="{{ route('tournaments.edit', $tournament) }}" role="button"><i class="fas fa-plus-circle"></i> Bewerken</a>
         </div>
         <div class="row tournamentRow">
             <div class="card col mr-4">
@@ -21,16 +22,16 @@
             </div>
             <div class="card col mr-4">
                 <div class="card-header bg-white font-weight-bold">
-                    Toernooi Deelnemers
+                    Deelnemers ({{ $count }}/{{ $tournament->formatParticipantAmount() }})
                 </div>
                 <div class="card-body">
-                    @foreach($data as $info) 
-
+                    @forelse($data as $info)
                         @foreach($info as $user)
                             <p class="tournamentParticipant">{{ $user->UserFirstname }} {{ $user->UserLastname }} <a href="{{ route('users.show', $user) }}"><i class="fas fa-eye"></i></a></p>
                         @endforeach
-
-                    @endforeach
+                    @empty
+                        <p>Er zijn nog geen inschrijvingen voor dit toernooi.</p>
+                    @endforelse
                 </div>
             </div>
         </div>

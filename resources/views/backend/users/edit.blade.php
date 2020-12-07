@@ -141,13 +141,9 @@
 
                     <div class="row form-group">
                         <div class="col">
-                            <label>Wachtwoord</label>
-                            <input type="password" class="form-control" name="password" value="{{ $user->password }}" placeholder="Wachtwoord">
-                            @error('password')
-                                <span class="invalidFeedback" role="alert">
-                                    <p>{{ $message }}</p>
-                                </span>
-                            @enderror
+                            <label>Is admin</label>
+                            <input type="hidden" name="userIsAdmin" value="0" {{$user->UserIsAdmin == '0' ? 'checked' : ''}} />
+                            <input type="checkbox" class="isAdmin" name="userIsAdmin" value="1" {{$user->UserIsAdmin == '1' ? 'checked' : ''}} />
                         </div>
                     </div>
                     

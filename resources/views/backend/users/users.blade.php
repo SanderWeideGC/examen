@@ -21,23 +21,21 @@
                             <th>Adres</th>
                             <th>Postcode</th>
                             <th>Woonplaats</th>
-                            <th class="actions">Actions</th>
+                            <th class="actions">Acties</th>
                         </tr>
                     </thead>
                     <tbody>
-                    
                         @foreach ($users as $user)
                             <tr>
                                 <td>{{ $user->UserFirstname }} 
                                     {{ $user->UserPrefix != "" ? $user->UserPrefix ." " : "" }} 
                                     {{ $user->UserLastname }}
                                 </td>
-                                <td>{{ $user->formatGender() }}</td>
+                                <td>{{ $user->formatGender() }}
                                 <td>{{ $user->UserBirthdate }}</td>
                                 <td>{{ $user->UserPhonenumber }}</td>
                                 <td>{{ $user->email }}</td>
-                                <td>{{ $user->UserStreet }} 
-                                <td>{{ $user->UserHousenumber }}</td>
+                                <td>{{ $user->UserStreet }} {{ $user->UserHousenumber }}</td>
                                 <td>{{ $user->UserPostalcode }}</td>
                                 <td>{{ $user->UserCity }}</td>
                                 <td>
@@ -46,7 +44,6 @@
                                 </td>
                             </tr>
                         @endforeach
-                    
                     </tbody>
                 </table>
             </div>

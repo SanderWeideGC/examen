@@ -149,6 +149,14 @@
                             @enderror
                         </div>
                     </div>
+
+                    <div class="row form-group">
+                        <div class="col">
+                            <label>Is admin</label>
+                            <input type="hidden" name="userIsAdmin" value="0" {{ old('userIsAdmin') == '0' ? 'checked' : ''}} />
+                            <input type="checkbox" class="isAdmin" name="userIsAdmin" value="1" {{ old('userIsAdmin') == '1' ? 'checked' : ''}} />
+                        </div>
+                    </div>
                     
                     <button type="submit" class="btn btn-primary">Opslaan</button>
 

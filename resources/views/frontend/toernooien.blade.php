@@ -23,13 +23,13 @@
                                 <label>
                                     <input type="radio" name="tournamentId" value="{{ $tournament->id }}">
                                     <div class="tournament">
-                                        <h2>{{ $tournament->TournamentTitle }} <span class="tournamentAmount">{{ $tournament->formatDate() }}</span> </h2>
+                                        <h2>{{ $tournament->TournamentTitle }} <span class="tournamentAmount">{{ $tournament->formatStartDate() }}</span> </h2>
                                         <p>{{ $tournament->TournamentDescription }}</p>
                                     </div>
                                 </label>
                             @endforeach
                         </div>
-                        <button type="submit" class="btn btn-red">Schrijf je in</button>
+                        <button type="submit" class="btn btn-red inschrijfButton">Schrijf je in</button>
                     </form>
                 </div>
                    

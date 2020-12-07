@@ -31,3 +31,43 @@
     font-size: 17px;
     font-weight: 500;
   }
+
+.inschrijfButton {
+  padding: 10px 20px;
+  margin-top: 15px;
+}
+
+.header-main .menubar {
+  float: right;
+}
+
+.auth {
+  margin-top: 100px;
+}
+
+.authForm {
+  max-width: 30%;
+  margin: 20px auto 0;
+}
+
+.authForm label {
+  padding: 0;
+  width: 60%;
+}
+
+.authForm .row {
+  margin: 0 0 20px 0;
+}
+
+.authButton {
+  padding: 10px 20px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.passwordForget {
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  width: 100%;
+}

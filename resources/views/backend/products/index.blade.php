@@ -17,6 +17,7 @@
                             <th>Categorie</th>
                             <th>Naam</th>
                             <th>Prijs</th>
+                            <th class="actions">Acties</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -18,12 +18,13 @@ class TournamentsController extends Controller
 
     public function show(Tournament $tournament) {
         $participants = Participant::where('TournamentID', $tournament->id)->get();
+        $count = $participants->count();
         $data = [];
         foreach($participants as $partic) {
             $user = User::where('id', $partic->UserID)->get();
             array_push($data, $user);
         }
-        return view('backend.tournaments.show', compact(['tournament', 'data']));
+        return view('backend.tournaments.show', compact(['tournament', 'data', 'count']));
     }
 
     public function create() {
@@ -69,9 +70,8 @@ class TournamentsController extends Controller
 
     public function indexOpenTournaments() {
         $tournaments = Tournament::get();
-        $participants = Participant::all();
 
-        return view('frontend.toernooien', compact(['tournaments', 'participants']));
+        return view('frontend.toernooien', compact('tournaments'));
     }
 
     public function storeParticipation() {
@@ -79,9 +79,9 @@ class TournamentsController extends Controller
         $user = Participant::where('UserID', Auth::id())->where('TournamentID', request('tournamentId'))->get();
         if ($user->count() == 0) {
             Participant::create($this->validateParticipant());
-            return redirect('/toernooien');
+            return redirect('/toernooien')->with('message', 'Je bent succesvol ingeschreven voor dit toernooi!');
         } else {
-            return redirect('/toernooien')->with('message', 'Je bent al ingeschreven voor dit toernooi!');;
+            return redirect('/toernooien')->with('message', 'Je bent al ingeschreven voor dit toernooi!');
         }
 
         

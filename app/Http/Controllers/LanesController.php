@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Lane;
+use App\Reservation;
 use Illuminate\Http\Request;
 
 class LanesController extends Controller
@@ -14,7 +15,9 @@ class LanesController extends Controller
     }  
 
     public function show(Lane $lane) {
-        return view('backend.lanes.show', compact('lane'));
+        $reservations = Reservation::where('LaneID', $lane->id)->get();
+
+        return view('backend.lanes.show', compact(['lane', 'reservations', 'user']));
     }
 
     public function create() {

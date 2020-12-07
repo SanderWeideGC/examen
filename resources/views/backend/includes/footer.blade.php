@@ -27,7 +27,7 @@ gtag('config', 'UA-118868344-1');
 
 function addClickToButton() {
 $('.removeButton').click(function() {
-  var confirm = window.confirm("Weet u zeker dat u deze baan wilt verwijderen?");
+  var confirm = window.confirm("Weet u zeker dat u dit wilt verwijderen?");
   var id = $(this).data('id');
   var type = $(this).data('type');
   if(confirm) {

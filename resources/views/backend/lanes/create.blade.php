@@ -43,8 +43,8 @@
                         <label>Ligging</label>
                         <select name="lanePositioning" class="form-control">
                             <option value="" disabled selected>Kies de ligging</option>
-                            <option value="1" {{old('laneStatus') == '1' ? 'selected' : ''}}>Binnen</option>
-                            <option value="2" {{old('laneStatus') == '2' ? 'selected' : ''}}>Buiten</option>
+                            <option value="1" {{old('lanePositioning') == '1' ? 'selected' : ''}}>Binnen</option>
+                            <option value="2" {{old('lanePositioning') == '2' ? 'selected' : ''}}>Buiten</option>
                         </select>
                         @error('lanePositioning')
                             <span class="invalidFeedback" role="alert">
@@ -65,7 +65,7 @@
                     </div>
                     <div class="col">
                         <label>Breedte</label>
-                        <input type="text" class="form-control" name="laneWidth" value="{{ old('LaneWidth') }}" placeholder="Breedte">
+                        <input type="text" class="form-control" name="laneWidth" value="{{ old('laneWidth') }}" placeholder="Breedte">
                         @error('laneWidth')
                             <span class="invalidFeedback" role="alert">
                                 <p>{{ $message }}</p>
@@ -76,7 +76,7 @@
                 <div class="row form-group">
                     <div class="col">
                         <label>Vloer</label>
-                        <input type="text" class="form-control" name="laneFlooring" value="{{ old('LaneFlooring') }}" placeholder="Vloer">
+                        <input type="text" class="form-control" name="laneFlooring" value="{{ old('laneFlooring') }}" placeholder="Vloer">
                         @error('laneFlooring')
                             <span class="invalidFeedback" role="alert">
                                 <p>{{ $message }}</p>
@@ -100,7 +100,7 @@
                 <div class="row form-group">
                     <div class="col">
                         <label>Checkdatum</label>
-                        <input type="date" class="form-control" name="laneLastCheck" value="{{ old('LaneLastCheck') }}" placeholder="Checkdatum">
+                        <input type="date" class="form-control" name="laneLastCheck" value="{{ old('laneLastCheck') }}" placeholder="Checkdatum">
                         @error('laneLastCheck')
                             <span class="invalidFeedback" role="alert">
                                 <p>{{ $message }}</p>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="col">
                         <label>Servicedatum</label>
-                        <input type="date" class="form-control" name="laneLastService" value="{{ old('LaneLastService') }}" placeholder="Servicedatum">
+                        <input type="date" class="form-control" name="laneLastService" value="{{ old('laneLastService') }}" placeholder="Servicedatum">
                         @error('laneLastService')
                             <span class="invalidFeedback" role="alert">
                                 <p>{{ $message }}</p>
