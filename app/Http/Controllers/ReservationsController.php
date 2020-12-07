@@ -55,7 +55,7 @@ class ReservationsController extends Controller
 
         $reservation->save();
 
-        return redirect(route('reservations.edit', $reservation));
+        return redirect(route('backend.reservations'));
     }
 
     public function destroy(Reservation $reservation)
