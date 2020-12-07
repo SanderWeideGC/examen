@@ -29,7 +29,7 @@ class ReservationsController extends Controller
         $reservation = new Reservation();
 
         $reservation->LaneID = request('reserveringBaanID');
-        $reservation->UserID = Auth::id();
+        $reservation->UserID = request('reserveringLidID');
         $reservation->ReservationStartTime = request('reserveringStartTime');
         $reservation->ReservationEndTime = request('reserveringEndTime');
         $reservation->ReservationDate = request('reserveringDate');
@@ -101,7 +101,7 @@ class ReservationsController extends Controller
         $reservation = new Reservation();
 
         $reservation->LaneID = request('reservationLane');
-        $reservation->UserID = request('reserveringLidID');
+        $reservation->UserID = Auth::id();
         $reservation->ReservationStartTime = request('reserveringStartTime');
         $reservation->ReservationEndTime = date('H:i:s', strtotime(request('reserveringStartTime') . ' +1 hour'));
         $reservation->ReservationDate = request('reservationDate');
