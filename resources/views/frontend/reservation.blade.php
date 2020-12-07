@@ -33,15 +33,6 @@
             </select>
         </div>
         <div class="form-group">
-            <label>Lid ID</label>
-        <input type="text" class="form-control" name="reserveringLidID" placeholder="Lid ID" value="{{ $userID }}">
-            @error('reserveringLidID')
-                <span class="invalidFeedback" role="alert">
-                    <p>Dit veld is niet goed ingevuld</p>
-                </span>
-            @enderror
-        </div>
-        <div class="form-group">
             <label>Start tijd</label>
             <select id="time" name="reserveringStartTime">
             <option value="" disabled selected>kies een tijd</option>

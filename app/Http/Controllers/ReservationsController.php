@@ -29,7 +29,7 @@ class ReservationsController extends Controller
         $reservation = new Reservation();
 
         $reservation->LaneID = request('reserveringBaanID');
-        $reservation->UserID = request('reserveringLidID');
+        $reservation->UserID = Auth::id();
         $reservation->ReservationStartTime = request('reserveringStartTime');
         $reservation->ReservationEndTime = request('reserveringEndTime');
         $reservation->ReservationDate = request('reserveringDate');
