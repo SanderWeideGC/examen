@@ -34,7 +34,7 @@
         </div>
         <div class="form-group">
             <label>Lid ID</label>
-        <input type="text" class="form-control" name="reserveringLidID" placeholder="Lid ID" value="test">
+        <input type="text" class="form-control" name="reserveringLidID" placeholder="Lid ID" value="{{ $userID }}">
             @error('reserveringLidID')
                 <span class="invalidFeedback" role="alert">
                     <p>Dit veld is niet goed ingevuld</p>
