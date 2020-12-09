@@ -69,7 +69,7 @@ class ReservationsController extends Controller
     {
         $availableTimes = 
         [
-            "12:00:00",
+            1 => "12:00:00",
             "13:00:00",
             "14:00:00",
             "15:00:00",
@@ -80,7 +80,6 @@ class ReservationsController extends Controller
             "20:00:00",
             "21:00:00",
             "22:00:00",
-            "23:00:00",
 
         ];
 

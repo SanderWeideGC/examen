@@ -14,7 +14,6 @@ function getAvailableTimes() {
     if(lane && date) {
         $.ajax({
             url: '/reserveren/time/'+ lane +'/'+ date,
-            data: "lane=" + lane + "&date=" + date,
             success: function(data){
                 var availableTimes = JSON.parse(data);
                 $("#time").empty();
