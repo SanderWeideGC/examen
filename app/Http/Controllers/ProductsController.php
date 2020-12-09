@@ -13,7 +13,6 @@ class ProductsController extends Controller
         return view('backend.products.index', [
             'products' => $products
         ]);
-
     }
 
     public function show($id)
@@ -24,7 +23,6 @@ class ProductsController extends Controller
     public function create()
     {
         return view('backend.products.create');
-
     }
 
     public function store(Request $request)
@@ -61,8 +59,8 @@ class ProductsController extends Controller
         $product->ProductName = request()->get('ProductName');
         $product->ProductCategory = request()->get('ProductCategory');
         $product->ProductPrice = request()->get('ProductPrice');
-
         $product->save();
+        
         return redirect(route('products.index'))->with('succes', 'Product gewijzigd!');
     }
 
@@ -72,8 +70,6 @@ class ProductsController extends Controller
         $product->delete();
 
         return redirect(route('products.index'))->with('succes', 'Product verwijderd!');
-
-
     }
 
 }
