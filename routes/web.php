@@ -21,9 +21,7 @@ Route::get('/about', function () {
     return view('frontend.about');
 });
 
-Route::get('/kantine', function () {
-    return view('frontend.kantine');
-});
+Route::get('/kantine', 'ProductsController@frontend')->name('frontend.kantine');
 
 Route::get('/contact', function () {
     return view('frontend.contact');
@@ -54,7 +52,7 @@ Route::get('/account', 'HomeController@index')->name('home');
 // Protected by admin middleware
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
     Route::get('/', function() { return view('backend.home'); });
-    
+
     Route::get('/leden', 'UsersController@index')->name('backend.users');
     Route::get('/banen', 'LanesController@index')->name('backend.lanes');
     Route::get('/reserveringen', 'ReservationsController@index')->name('backend.reservations');

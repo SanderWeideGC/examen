@@ -20,9 +20,10 @@
                         <label>Categorie</label>
                         <select name="ProductCategory" class="form-control">
                             <option value="" disabled selected>Categorie</option>
-                            <option value="1" {{$product->ProductCategory == 'Koude dranken' ? 'selected' : ''}}>Koude dranken</option>
-                            <option value="2" {{$product->ProductCategory == 'Warme dranken' ? 'selected' : ''}}>Warme dranken</option>
-                            <option value="3" {{$product->ProductCategory == 'Snacks' ? 'selected' : ''}}>Snacks</option>
+                            //selected maken van gekozen product categorie
+                            <option value="1" {{$product->ProductCategory == '1' ? 'selected' : ''}}>Koude dranken</option>
+                            <option value="2" {{$product->ProductCategory == '2' ? 'selected' : ''}}>Warme dranken</option>
+                            <option value="3" {{$product->ProductCategory == '3' ? 'selected' : ''}}>Snacks</option>
 
                         </select>
                         @error('ProductCategory')

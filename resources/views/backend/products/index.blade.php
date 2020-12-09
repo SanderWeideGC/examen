@@ -5,7 +5,7 @@
     <div class="controls">
         <h2 class="mb-4">Producten</h2>
         <hr>
-        <a class="btn btn-dark btn-lg" href="{{ route('lanes.create') }}" role="button"><i class="fas fa-plus-circle"></i> Toevoegen</a>
+        <a class="btn btn-dark btn-lg" href="{{ route('products.create') }}" role="button"><i class="fas fa-plus-circle"></i> Toevoegen</a>
     </div>
 
     <div class="card mb-4">
