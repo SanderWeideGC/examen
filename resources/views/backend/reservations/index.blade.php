@@ -23,6 +23,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        {{-- Voor elke reservering een row aanmaken --}}
                         @foreach($reservations as $reservations)
                             <tr>
                                 <td>{{ $reservations->id }}</td>
