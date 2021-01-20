@@ -6,13 +6,6 @@
             <h2 class="mb-4">Reserveringen</h2>
             <hr>
         </div>
-{{-- 
-        <th>Baan ID</th>
-        <th>Lid ID</th>
-        <th>Tijd</th>
-        <th>Datum</th> 
---}}
-
         <div class="card mb-4">
             <div class="card-header bg-white font-weight-bold">
                 Reservering {{ $reservation->id }} bewerken
