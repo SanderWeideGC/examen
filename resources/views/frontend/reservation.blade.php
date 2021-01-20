@@ -19,7 +19,7 @@
             <option value="{{ date('Y-m-d', strtotime(date('Y-m-d') . ' +7 day')) }}">{{ date('Y-m-d', strtotime(date('Y-m-d') . ' +7 day')) }}</option>
             </select>
         </div>
-        <label>Baan ID</label>
+        <label>Baan</label>
         <div class="form-group">
             <select id="reservationLane" name="reservationLane">
             <option value="" disabled selected>selecteer een baan</option>
